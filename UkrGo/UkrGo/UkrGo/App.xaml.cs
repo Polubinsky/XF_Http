@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using DLToolkit.Forms.Controls;
 using Xamarin.Forms;
 
 namespace UkrGo
@@ -12,8 +12,20 @@ namespace UkrGo
         public App()
         {
             InitializeComponent();
+//#if !DEBUG
 
-            MainPage = new UkrGo.MainPage();
+                FlowListView.Init();
+//#endif
+            MainPage = GetMainPage();
+
+
+        }
+
+
+        public static Page GetMainPage()
+        {
+          
+            return new NavigationPage(new MainPage());
         }
 
         protected override void OnStart()

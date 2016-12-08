@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="UkrGo.Views.DetailPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:forms="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.CarouselView"
+    xmlns:forms1="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+    xmlns:ukrGo="clr-namespace:UkrGo;assembly=UkrGo">
+    <Grid Margin="8" RowSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height=".7*" />
+            <RowDefinition Height=".3*" />
+        </Grid.RowDefinitions>
+        <forms:CarouselView
+            x:Name="csImages"
+            Grid.Row="0"
+            ItemsSource="{Binding Data.ImageLinks}"
+            Position="{Binding Position, Mode=TwoWay}">
+            <forms:CarouselView.ItemTemplate>
+                <DataTemplate>
+
+                    <forms1:CachedImage
+                        Aspect="AspectFill"
+                        BackgroundColor="White"
+                        DownsampleToViewSize="true"
+                        Source="{Binding Picture}" />
+
+
+                </DataTemplate>
+            </forms:CarouselView.ItemTemplate>
+        </forms:CarouselView>
+        <ukrGo:CarouselIndicators
+            Grid.Row="0"
+            Margin="10"
+            IndicatorHeight="16"
+            IndicatorWidth="16"
+            ItemsSource="{Binding Data.ImageLinks}"
+            Position="{Binding Position}"
+            SelectedIndicator="selected_circle.png"
+            UnselectedIndicator="unselected_circle.png"
+            VerticalOptions="End" />
+        <ScrollView Grid.Row="1">
+            <StackLayout Padding="12">
+                <Label
+                    FontSize="16"
+                    HorizontalOptions="StartAndExpand"
+                    Text="{Binding Data.Region}"
+                    TextColor="Black"
+                    VerticalOptions="CenterAndExpand" />
+                <Label
+                    FontSize="16"
+                    HorizontalOptions="StartAndExpand"
+                    Text="{Binding Data.Contact}"
+                    TextColor="Black"
+                    VerticalOptions="CenterAndExpand" />
+                <Label
+                    FontSize="16"
+                    HorizontalOptions="StartAndExpand"
+                    Text="{Binding Data.Info}"
+                    TextColor="Black"
+                    VerticalOptions="CenterAndExpand" />
+                <Label
+                    FontSize="16"
+                    HorizontalOptions="StartAndExpand"
+                    Text="{Binding Data.Text}"
+                    TextColor="Gray"
+                    VerticalOptions="CenterAndExpand" />
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

@@ -1,9 +1,19 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
-    <ReferenceAssembly PathName="d:\users\andrey\documents\visual studio 2015\projects\ukrgo\packages\xamarin.forms.2.2.0.45\lib\win81\xamarin.forms.core.dll" HashGuid="2a418b72-55c1-19a8-a363-4b8c348fbee0" />
-    <ReferenceAssembly PathName="d:\users\andrey\documents\visual studio 2015\projects\ukrgo\packages\xamarin.forms.2.2.0.45\lib\win81\xamarin.forms.platform.dll" HashGuid="bb4040f4-26bb-5883-795e-627e39855666" />
-    <ReferenceAssembly PathName="d:\users\andrey\documents\visual studio 2015\projects\ukrgo\packages\xamarin.forms.2.2.0.45\lib\win81\xamarin.forms.platform.winrt.dll" HashGuid="068a3578-03d9-2580-f12e-c531e1d2d71c" />
-    <ReferenceAssembly PathName="d:\users\andrey\documents\visual studio 2015\projects\ukrgo\packages\xamarin.forms.2.2.0.45\lib\win81\xamarin.forms.platform.winrt.tablet.dll" HashGuid="9b9da374-307d-5504-a527-efe9a46940ca" />
-    <ReferenceAssembly PathName="d:\users\andrey\documents\visual studio 2015\projects\ukrgo\packages\xamarin.forms.2.2.0.45\lib\win81\xamarin.forms.xaml.dll" HashGuid="39a2c026-b4e0-6e41-04bc-58950ef1ecfd" />
+    <LocalAssembly PathName="d:\projects\xf_http\ukrgo\ukrgo\ukrgo.windows\obj\debug\intermediatexaml\ukrgo.windows.exe" HashGuid="6b545c30-00c2-4432-ab7b-29c26d75fe1c" />
+    <ReferenceAssembly PathName="d:\projects\xf_http\ukrgo\packages\dltoolkit.forms.controls.flowlistview.2.0.2\lib\portable-net45+wp8+wpa81+win8+monoandroid10+monotouch10+xamarin.ios10\dltoolkit.forms.controls.flowlistview.dll" HashGuid="908b01a9-fb47-7544-69c1-291ebbc7133c" />
+    <ReferenceAssembly PathName="d:\projects\xf_http\ukrgo\packages\xamarin.ffimageloading.2.2.6-pre-241\lib\portable-netcore45+wpa81\ffimageloading.dll" HashGuid="792dde54-05b4-def9-9140-26850800f2c7" />
+    <ReferenceAssembly PathName="d:\projects\xf_http\ukrgo\packages\xamarin.ffimageloading.forms.2.2.6-pre-241\lib\portable-netcore45+wpa81\ffimageloading.forms.dll" HashGuid="ff8a93c6-fdfb-8dd9-013b-14c669f25c94" />
+    <ReferenceAssembly PathName="d:\projects\xf_http\ukrgo\packages\xamarin.ffimageloading.forms.2.2.6-pre-241\lib\portable-netcore45+wpa81\ffimageloading.forms.winrt.dll" HashGuid="1d1bb314-08d8-7644-8b2f-333f37a0855c" />
+    <ReferenceAssembly PathName="d:\projects\xf_http\ukrgo\packages\xamarin.ffimageloading.2.2.6-pre-241\lib\portable-netcore45+wpa81\ffimageloading.platform.dll" HashGuid="0ca9366e-401b-789f-16ea-3aca39eb4b1e" />
+    <ReferenceAssembly PathName="d:\projects\xf_http\ukrgo\packages\htmlagilitypack.1.4.9.5\lib\netcore45\htmlagilitypack.dll" HashGuid="669f6c79-8d59-33c1-db8d-313bd7b45222" />
+    <ReferenceAssembly PathName="d:\projects\xf_http\ukrgo\packages\microsoft.net.http.2.2.29\lib\win8\system.net.http.extensions.dll" HashGuid="b50282f8-b9f8-4408-8d49-ba2efe301624" />
+    <ReferenceAssembly PathName="d:\projects\xf_http\ukrgo\packages\microsoft.net.http.2.2.29\lib\win8\system.net.http.primitives.dll" HashGuid="7b71418d-e056-7613-c839-85fb8f6472a6" />
+    <ReferenceAssembly PathName="d:\projects\xf_http\ukrgo\ukrgo\ukrgo\bin\debug\ukrgo.dll" HashGuid="38db3259-e7ec-9d94-8abc-6981c7d3bd57" />
+    <ReferenceAssembly PathName="d:\projects\xf_http\ukrgo\packages\xamarin.forms.2.3.3.168\lib\win81\xamarin.forms.core.dll" HashGuid="8fd6d715-5b1e-67fd-feee-b3bb9cc9acd7" />
+    <ReferenceAssembly PathName="d:\projects\xf_http\ukrgo\packages\xamarin.forms.2.3.3.168\lib\win81\xamarin.forms.platform.dll" HashGuid="6b938cd4-44c0-2618-7eb6-4caa3f482076" />
+    <ReferenceAssembly PathName="d:\projects\xf_http\ukrgo\packages\xamarin.forms.2.3.3.168\lib\win81\xamarin.forms.platform.winrt.dll" HashGuid="fe4acc44-27ba-0e4e-a08b-26ae7dccb678" />
+    <ReferenceAssembly PathName="d:\projects\xf_http\ukrgo\packages\xamarin.forms.2.3.3.168\lib\win81\xamarin.forms.platform.winrt.tablet.dll" HashGuid="6cda1a83-1d8e-d2d4-211d-d5f3a06554ab" />
+    <ReferenceAssembly PathName="d:\projects\xf_http\ukrgo\packages\xamarin.forms.2.3.3.168\lib\win81\xamarin.forms.xaml.dll" HashGuid="5a0f8f23-7317-5e4b-74d2-2bf18c289c53" />
   </ReferenceAssemblyList>
 </XamlCompilerSaveState>

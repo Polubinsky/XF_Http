@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="UkrGo.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView"
+    xmlns:fftransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
+    xmlns:forms="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+    xmlns:local="clr-namespace:UkrGo">
+    <Grid
+        x:Name="grdControls"
+        HorizontalOptions="FillAndExpand"
+        VerticalOptions="FillAndExpand">
+
+
+        <controls:FlowListView
+            x:Name="flvControl"
+            FlowColumnMinWidth="150"
+            FlowItemsSource="{Binding Rows}"
+            HasUnevenRows="true"
+            IsPullToRefreshEnabled="True"
+            IsRefreshing="{Binding IsBusy, Mode=OneWay}"
+            RefreshCommand="{Binding RefreshCommand}"
+           
+            SeparatorVisibility="Default">
+
+            <controls:FlowListView.FlowColumnTemplate>
+                <DataTemplate>
+                    <Grid Padding="5">
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <forms:CachedImage 
+                            Aspect="AspectFit"
+                            BackgroundColor="White"
+                            DownsampleToViewSize="true"
+                            HeightRequest="200"
+                            HorizontalOptions="Center"
+                            LoadingPlaceholder="Loading.png"
+                            Source="{Binding MainImage.Picture}"
+                            VerticalOptions="Center"
+                            WidthRequest="200" />
+
+                        <!--<Label x:Name="Label" HorizontalOptions="Fill" HorizontalTextAlignment="Center" VerticalOptions="End"
+							BackgroundColor="Silver" Opacity="0.5" Text="{Binding Text}"/>-->
+                    </Grid>
+                </DataTemplate>
+            </controls:FlowListView.FlowColumnTemplate>
+           
+        </controls:FlowListView>
+        <!--<ListView
+            x:Name="AdsView"
+            HasUnevenRows="True"
+            HorizontalOptions="FillAndExpand"
+            IsVisible="True"
+            ItemsSource="{Binding Rows}"
+            VerticalOptions="FillAndExpand">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+
+                        <StackLayout Margin="5,5,5,5" Orientation="Horizontal">
+                            <forms:CachedImage
+                                Aspect="AspectFill"
+                                DownsampleToViewSize="true"
+                                HeightRequest="200"
+                                HorizontalOptions="Center"
+                                Source="{Binding MainImage.Picture}"
+                                VerticalOptions="Center"
+                                WidthRequest="200">
+                            </forms:CachedImage>
+
+                            <Label Text="{Binding Text}" />
+
+                        </StackLayout>
+
+                    </ViewCell>
+
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>-->
+        <!--<ActivityIndicator
+            x:Name="Indicator"
+            Margin="5,5,5,5"
+            HorizontalOptions="CenterAndExpand"
+            IsRunning="{Binding IsLoading}"
+            IsVisible="{Binding IsLoading}"
+            VerticalOptions="CenterAndExpand" />-->
+    </Grid>
+</ContentPage>
+

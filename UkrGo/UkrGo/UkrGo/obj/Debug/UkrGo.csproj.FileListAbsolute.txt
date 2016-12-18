@@ -56,11 +56,11 @@ D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\Xamarin.Forms.Platform.pdb
 D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\Xamarin.Forms.Xaml.pdb
 D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\Xamarin.Forms.Xaml.xml
 D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo\obj\Debug\UkrGo.csproj.App.config
-D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo\obj\Debug\UkrGo.csprojResolveAssemblyReference.cache
 D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo\obj\Debug\UkrGo.Views.MainPage.xaml.g.cs
 D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo\obj\Debug\UkrGo.App.xaml.g.cs
 D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo\obj\Debug\UkrGo.Views.DetailPage.xaml.g.cs
 D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo\obj\Debug\UkrGo.dll
 D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo\obj\Debug\UkrGo.pdb
+D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo\obj\Debug\UkrGo.csprojResolveAssemblyReference.cache
 D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo\obj\Debug\UkrGo.dll.mdb
 D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\UkrGo.dll.mdb

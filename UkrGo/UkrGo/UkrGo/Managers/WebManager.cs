@@ -63,7 +63,7 @@ namespace UkrGo
         public static async Task<DetailData> GetDataByLink(string link)
         {
             var client = new HttpClient();
-
+            DetailData dd = new DetailData();
             try
             {
                 string s = await client.GetStringAsync(link);
@@ -78,15 +78,13 @@ namespace UkrGo
                                          "width: 90%; margin-top: 19px; margin-left: auto; margin-right: auto; padding-top: 10px; text-align: left;");
 
 
-                DetailData dd = new DetailData();
+               
                 if (parent == null) return dd;
 
                 dd.Caption = parent.ChildNodes[1].InnerText.Trim();
                 dd.DetailString = parent.ChildNodes[3].OuterHtml.Split('\n');
                 dd.Text = parent.ChildNodes[5].ChildNodes[1].ChildNodes[1].InnerText.Trim();
-                int idx = dd.Text.IndexOf("Контактные телефоны", StringComparison.Ordinal);
-                dd.Contact = dd.Text.Substring(idx, dd.Text.Length - idx);
-                dd.Text = dd.Text.Substring(0, idx).Trim();
+               
                 dd.ImageLinks = new ObservableCollection<ImageData>();
 
                 foreach (
@@ -104,11 +102,18 @@ namespace UkrGo
                         // ignored
                     }
                 }
+
+                int idx = dd.Text.IndexOf("Контактные телефоны", StringComparison.Ordinal);
+                if (idx != -1)
+                {
+                    dd.Contact = dd.Text.Substring(idx, dd.Text.Length - idx);
+                    dd.Text = dd.Text.Substring(0, idx).Trim();
+                }
                 return dd;
             }
             catch (Exception)
             {
-                
+                return dd;
             }
             return new DetailData();
         }

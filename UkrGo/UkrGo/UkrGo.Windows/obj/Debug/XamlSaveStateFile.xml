@@ -1,15 +1,14 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
-    <LocalAssembly PathName="d:\projects\xf_http\ukrgo\ukrgo\ukrgo.windows\obj\debug\intermediatexaml\ukrgo.windows.exe" HashGuid="6b545c30-00c2-4432-ab7b-29c26d75fe1c" />
     <ReferenceAssembly PathName="d:\projects\xf_http\ukrgo\packages\dltoolkit.forms.controls.flowlistview.2.0.2\lib\portable-net45+wp8+wpa81+win8+monoandroid10+monotouch10+xamarin.ios10\dltoolkit.forms.controls.flowlistview.dll" HashGuid="908b01a9-fb47-7544-69c1-291ebbc7133c" />
-    <ReferenceAssembly PathName="d:\projects\xf_http\ukrgo\packages\xamarin.ffimageloading.2.2.6-pre-241\lib\portable-netcore45+wpa81\ffimageloading.dll" HashGuid="792dde54-05b4-def9-9140-26850800f2c7" />
-    <ReferenceAssembly PathName="d:\projects\xf_http\ukrgo\packages\xamarin.ffimageloading.forms.2.2.6-pre-241\lib\portable-netcore45+wpa81\ffimageloading.forms.dll" HashGuid="ff8a93c6-fdfb-8dd9-013b-14c669f25c94" />
-    <ReferenceAssembly PathName="d:\projects\xf_http\ukrgo\packages\xamarin.ffimageloading.forms.2.2.6-pre-241\lib\portable-netcore45+wpa81\ffimageloading.forms.winrt.dll" HashGuid="1d1bb314-08d8-7644-8b2f-333f37a0855c" />
-    <ReferenceAssembly PathName="d:\projects\xf_http\ukrgo\packages\xamarin.ffimageloading.2.2.6-pre-241\lib\portable-netcore45+wpa81\ffimageloading.platform.dll" HashGuid="0ca9366e-401b-789f-16ea-3aca39eb4b1e" />
+    <ReferenceAssembly PathName="d:\projects\xf_http\ukrgo\packages\xamarin.ffimageloading.2.2.6-pre-256\lib\portable-netcore45+wpa81\ffimageloading.dll" HashGuid="8f93d76d-2cc8-1183-b760-5e3e1e094f77" />
+    <ReferenceAssembly PathName="d:\projects\xf_http\ukrgo\packages\xamarin.ffimageloading.forms.2.2.6-pre-256\lib\portable-netcore45+wpa81\ffimageloading.forms.dll" HashGuid="48cd9d2e-a9b3-9371-efcf-172135b917ba" />
+    <ReferenceAssembly PathName="d:\projects\xf_http\ukrgo\packages\xamarin.ffimageloading.forms.2.2.6-pre-256\lib\portable-netcore45+wpa81\ffimageloading.forms.winrt.dll" HashGuid="60f48b7d-72db-c808-ad63-25c5596e0891" />
+    <ReferenceAssembly PathName="d:\projects\xf_http\ukrgo\packages\xamarin.ffimageloading.2.2.6-pre-256\lib\portable-netcore45+wpa81\ffimageloading.platform.dll" HashGuid="34e96285-d049-9085-055d-335a3754ca3c" />
     <ReferenceAssembly PathName="d:\projects\xf_http\ukrgo\packages\htmlagilitypack.1.4.9.5\lib\netcore45\htmlagilitypack.dll" HashGuid="669f6c79-8d59-33c1-db8d-313bd7b45222" />
     <ReferenceAssembly PathName="d:\projects\xf_http\ukrgo\packages\microsoft.net.http.2.2.29\lib\win8\system.net.http.extensions.dll" HashGuid="b50282f8-b9f8-4408-8d49-ba2efe301624" />
     <ReferenceAssembly PathName="d:\projects\xf_http\ukrgo\packages\microsoft.net.http.2.2.29\lib\win8\system.net.http.primitives.dll" HashGuid="7b71418d-e056-7613-c839-85fb8f6472a6" />
-    <ReferenceAssembly PathName="d:\projects\xf_http\ukrgo\ukrgo\ukrgo\bin\debug\ukrgo.dll" HashGuid="082820f5-3f44-e20c-b5d3-2454fe7d6d66" />
+    <ReferenceAssembly PathName="d:\projects\xf_http\ukrgo\ukrgo\ukrgo\bin\debug\ukrgo.dll" HashGuid="49d4217c-6331-0068-cd26-bea42e6f13de" />
     <ReferenceAssembly PathName="d:\projects\xf_http\ukrgo\packages\xamarin.forms.2.3.3.168\lib\win81\xamarin.forms.core.dll" HashGuid="8fd6d715-5b1e-67fd-feee-b3bb9cc9acd7" />
     <ReferenceAssembly PathName="d:\projects\xf_http\ukrgo\packages\xamarin.forms.2.3.3.168\lib\win81\xamarin.forms.platform.dll" HashGuid="6b938cd4-44c0-2618-7eb6-4caa3f482076" />
     <ReferenceAssembly PathName="d:\projects\xf_http\ukrgo\packages\xamarin.forms.2.3.3.168\lib\win81\xamarin.forms.platform.winrt.dll" HashGuid="fe4acc44-27ba-0e4e-a08b-26ae7dccb678" />

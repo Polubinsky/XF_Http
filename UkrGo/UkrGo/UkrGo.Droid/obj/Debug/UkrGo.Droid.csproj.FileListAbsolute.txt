@@ -120,10 +120,11 @@ D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\obj\Debug\res\drawable\girl.png
 D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\obj\Debug\res\drawable\loading.png
 D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\obj\Debug\res\drawable\logo_ukrgo.png
 D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\obj\Debug\res\drawable\ic_sync.png
+D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\obj\Debug\res\drawable\more.png
+D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\obj\Debug\res\drawable\santa.png
 D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\obj\Debug\R.cs.flag
 D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\obj\Debug\uploadflags.txt
 D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\UkrGo.Droid.dll.mdb
-D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\UkrGo.dll.mdb
 D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\Java.Interop.dll.mdb
 D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\Mono.Android.dll.mdb
 D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\mscorlib.dll.mdb
@@ -135,6 +136,7 @@ D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\System.Runtime.Serializati
 D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\System.ServiceModel.Internals.dll.mdb
 D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\System.Xml.dll.mdb
 D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\System.Xml.Linq.dll.mdb
+D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\UkrGo.dll.mdb
 D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\obj\Debug\android\assets\FFImageLoading.dll.mdb
 D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\obj\Debug\android\assets\FFImageLoading.Forms.dll.mdb
 D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\obj\Debug\android\assets\FFImageLoading.Forms.Droid.dll.mdb

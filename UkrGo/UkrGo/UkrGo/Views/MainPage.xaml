@@ -21,7 +21,6 @@
             IsPullToRefreshEnabled="True"
             IsRefreshing="{Binding IsBusy, Mode=OneWay}"
             RefreshCommand="{Binding RefreshCommand}"
-           
             SeparatorVisibility="Default">
 
             <controls:FlowListView.FlowColumnTemplate>
@@ -35,9 +34,10 @@
                             <ColumnDefinition Width="*" />
                         </Grid.ColumnDefinitions>
 
-                        <forms:CachedImage 
+                        <forms:CachedImage
                             Aspect="AspectFit"
                             BackgroundColor="White"
+                            CacheType="Memory"
                             DownsampleToViewSize="true"
                             HeightRequest="200"
                             HorizontalOptions="Center"
@@ -51,7 +51,7 @@
                     </Grid>
                 </DataTemplate>
             </controls:FlowListView.FlowColumnTemplate>
-           
+
         </controls:FlowListView>
         <!--<ListView
             x:Name="AdsView"

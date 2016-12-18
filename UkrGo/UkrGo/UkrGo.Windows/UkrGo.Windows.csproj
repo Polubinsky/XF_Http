@@ -147,19 +147,19 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="FFImageLoading, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Xamarin.FFImageLoading.2.2.6-pre-241\lib\portable-netcore45+wpa81\FFImageLoading.dll</HintPath>
+      <HintPath>..\..\packages\Xamarin.FFImageLoading.2.2.6-pre-256\lib\portable-netcore45+wpa81\FFImageLoading.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="FFImageLoading.Forms, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Xamarin.FFImageLoading.Forms.2.2.6-pre-241\lib\portable-netcore45+wpa81\FFImageLoading.Forms.dll</HintPath>
+      <HintPath>..\..\packages\Xamarin.FFImageLoading.Forms.2.2.6-pre-256\lib\portable-netcore45+wpa81\FFImageLoading.Forms.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="FFImageLoading.Forms.WinRT, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Xamarin.FFImageLoading.Forms.2.2.6-pre-241\lib\portable-netcore45+wpa81\FFImageLoading.Forms.WinRT.dll</HintPath>
+      <HintPath>..\..\packages\Xamarin.FFImageLoading.Forms.2.2.6-pre-256\lib\portable-netcore45+wpa81\FFImageLoading.Forms.WinRT.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="FFImageLoading.Platform, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Xamarin.FFImageLoading.2.2.6-pre-241\lib\portable-netcore45+wpa81\FFImageLoading.Platform.dll</HintPath>
+      <HintPath>..\..\packages\Xamarin.FFImageLoading.2.2.6-pre-256\lib\portable-netcore45+wpa81\FFImageLoading.Platform.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="HtmlAgilityPack, Version=1.4.9.5, Culture=neutral, processorArchitecture=MSIL">

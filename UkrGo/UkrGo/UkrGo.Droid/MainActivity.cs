@@ -1,11 +1,13 @@
 ﻿using System;
 
 using Android.App;
+using Android.Content;
 using Android.Content.PM;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using FFImageLoading;
 
 namespace UkrGo.Droid
 {
@@ -24,6 +26,15 @@ namespace UkrGo.Droid
            
 
         }
+
+        public override void OnTrimMemory(TrimMemory level)
+        {
+            ImageService.Instance.InvalidateMemoryCache();
+            GC.Collect(GC.MaxGeneration, GCCollectionMode.Forced);
+            base.OnTrimMemory(level);
+        }
+
+        
     }
 }
 

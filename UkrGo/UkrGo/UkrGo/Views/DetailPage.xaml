@@ -3,7 +3,7 @@
     x:Class="UkrGo.Views.DetailPage"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:controls="clr-namespace:UkrGo.Controls;assembly=UkrGo"
+    
     xmlns:forms="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.CarouselView"
     xmlns:forms1="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
     xmlns:ukrGo="clr-namespace:UkrGo;assembly=UkrGo">
@@ -36,16 +36,20 @@
                 Position="{Binding Position, Mode=TwoWay}">
                 <forms:CarouselView.ItemTemplate>
                     <DataTemplate>
-                        <controls:PinchToZoomContainer>
-                            <controls:PinchToZoomContainer.Content>
-                                <forms1:CachedImage
-                                    Aspect="AspectFill"
-                                    BackgroundColor="White"
-                                    DownsampleToViewSize="true"
-                                    Source="{Binding Picture}" />
-                            </controls:PinchToZoomContainer.Content>
-                        </controls:PinchToZoomContainer>
-                    </DataTemplate>
+
+                      <forms1:CachedImage
+                          Aspect="AspectFill"
+                          BackgroundColor="White"
+                          DownsampleToViewSize="true"
+                          Source="{Binding Picture}" >
+                                    <forms1:CachedImage.GestureRecognizers>
+                                  <TapGestureRecognizer
+                                          Tapped="OnImageDoubleTap"
+                                          NumberOfTapsRequired="1" />
+                                </forms1:CachedImage.GestureRecognizers>
+                      </forms1:CachedImage>
+
+                              </DataTemplate>
                 </forms:CarouselView.ItemTemplate>
             </forms:CarouselView>
             <ukrGo:CarouselIndicators

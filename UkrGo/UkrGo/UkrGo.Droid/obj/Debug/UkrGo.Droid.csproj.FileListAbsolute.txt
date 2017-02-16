@@ -48,6 +48,7 @@ D:\users\andrey\documents\visual studio 2015\Projects\UkrGo\UkrGo\UkrGo.Droid\ob
 D:\users\andrey\documents\visual studio 2015\Projects\UkrGo\UkrGo\UkrGo.Droid\obj\Debug\uploadflags.txt
 D:\users\andrey\documents\visual studio 2015\Projects\UkrGo\UkrGo\UkrGo.Droid\obj\Debug\UkrGo.Droid.dll.mdb
 D:\users\andrey\documents\visual studio 2015\Projects\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\UkrGo.Droid.dll.mdb
+D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\obj\Debug\UkrGo.Droid.csprojResolveAssemblyReference.cache
 D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\UkrGo.Droid.dll.config
 D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\UkrGo.Droid.dll
 D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\UkrGo.Droid.pdb
@@ -102,7 +103,6 @@ D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\Xamarin.Forms.Platform.And
 D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\Xamarin.Forms.Xaml.pdb
 D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\Xamarin.Forms.Xaml.xml
 D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\Xamarin.Forms.Xaml.dll.mdb
-D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\obj\Debug\UkrGo.Droid.csprojResolveAssemblyReference.cache
 D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\obj\Debug\UkrGo.Droid.dll
 D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\obj\Debug\UkrGo.Droid.pdb
 D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\obj\Debug\android\bin\com.ukrgo.apk
@@ -122,9 +122,11 @@ D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\obj\Debug\res\drawable\logo_ukrgo.pn
 D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\obj\Debug\res\drawable\ic_sync.png
 D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\obj\Debug\res\drawable\more.png
 D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\obj\Debug\res\drawable\santa.png
+D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\obj\Debug\res\drawable\ukrgo.jpg
 D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\obj\Debug\R.cs.flag
 D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\obj\Debug\uploadflags.txt
 D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\UkrGo.Droid.dll.mdb
+D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\UkrGo.dll.mdb
 D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\Java.Interop.dll.mdb
 D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\Mono.Android.dll.mdb
 D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\mscorlib.dll.mdb
@@ -136,7 +138,6 @@ D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\System.Runtime.Serializati
 D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\System.ServiceModel.Internals.dll.mdb
 D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\System.Xml.dll.mdb
 D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\System.Xml.Linq.dll.mdb
-D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\UkrGo.dll.mdb
 D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\obj\Debug\android\assets\FFImageLoading.dll.mdb
 D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\obj\Debug\android\assets\FFImageLoading.Forms.dll.mdb
 D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\obj\Debug\android\assets\FFImageLoading.Forms.Droid.dll.mdb

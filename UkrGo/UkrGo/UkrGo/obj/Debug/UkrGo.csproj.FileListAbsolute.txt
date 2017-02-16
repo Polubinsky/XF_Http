@@ -64,3 +64,5 @@ D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo\obj\Debug\UkrGo.pdb
 D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo\obj\Debug\UkrGo.csprojResolveAssemblyReference.cache
 D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo\obj\Debug\UkrGo.dll.mdb
 D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\UkrGo.dll.mdb
+D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo\obj\Debug\UkrGo.dll.mdb
+D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\UkrGo.dll.mdb

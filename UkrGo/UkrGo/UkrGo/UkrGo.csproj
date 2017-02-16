@@ -39,6 +39,9 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Controls\CarouselIndicators.cs" />
+    <Compile Include="Controls\PinchToZoomContainer.cs" />
+    <Compile Include="Extensions\DoubleExtensions.cs" />
+    <Compile Include="ViewModel\ImagePageViewModel.cs" />
     <Compile Include="Views\DetailPage.xaml.cs">
       <DependentUpon>DetailPage.xaml</DependentUpon>
     </Compile>

@@ -8,6 +8,9 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 using FFImageLoading;
+using UkrGo.Droid.Extra;
+using UkrGo.Interfaces;
+using Xamarin.Forms;
 
 namespace UkrGo.Droid
 {
@@ -22,6 +25,7 @@ namespace UkrGo.Droid
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
+            
             LoadApplication(new App());
            
 

@@ -1,9 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UkrGo.Interfaces;
 using UkrGo.Model;
+using Xamarin.Forms;
 
 namespace UkrGo.ViewModel
 {
@@ -67,6 +70,21 @@ namespace UkrGo.ViewModel
             }
         }
 
+        private bool _isSaving = true ;
+
+        public bool IsSaving
+        {
+            get { return _isSaving; }
+            set
+            {
+                if (_isSaving == value)
+                    return;
+
+                _isSaving = value;
+                OnPropertyChanged("IsSaving");
+            }
+        }
+
         private bool _isDataReady;
 
         public bool IsDataReady
@@ -89,6 +107,23 @@ namespace UkrGo.ViewModel
             {
                 _position = value;
                 OnPropertyChanged("Position");
+            }
+        }
+
+        private Command _saveCommand;
+        public Command SaveCommand
+        {
+            get
+            {
+                return _saveCommand ?? (_saveCommand = new Command
+                    (async () =>
+                    {
+                        IsSaving = false;
+                        IScreenshotManager sm = DependencyService.Get<IScreenshotManager>();
+                        byte[] b = await sm.CaptureAsync();
+                        sm.SavePictureToDisk("ukrgo", b);
+                        IsSaving = true;
+                    }));
             }
         }
     }

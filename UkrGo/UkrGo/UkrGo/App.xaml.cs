@@ -6,7 +6,7 @@ using DLToolkit.Forms.Controls;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-[assembly: XamlCompilation(XamlCompilationOptions.Compile)]
+
 namespace UkrGo
 {
     public partial class App : Application

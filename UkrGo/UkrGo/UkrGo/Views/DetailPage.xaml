@@ -3,7 +3,7 @@
     x:Class="UkrGo.Views.DetailPage"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    
+    xmlns:converters="clr-namespace:UkrGo.Converters;assembly=UkrGo"
     xmlns:forms="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.CarouselView"
     xmlns:forms1="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
     xmlns:ukrGo="clr-namespace:UkrGo;assembly=UkrGo">
@@ -21,6 +21,12 @@
                                                               Factor=0.28}"
             VerticalOptions="CenterAndExpand"
             Color="Gray" />
+       
+        <Button
+            BackgroundColor="Green"
+            Command="{Binding SaveCommand}"
+            IsVisible="{Binding IsSaving, Mode=TwoWay}"
+            Text="Save" />
         <Grid
             Margin="8"
             IsVisible="{Binding IsDataReady, Mode=TwoWay}"
@@ -37,19 +43,17 @@
                 <forms:CarouselView.ItemTemplate>
                     <DataTemplate>
 
-                      <forms1:CachedImage
-                          Aspect="AspectFill"
-                          BackgroundColor="White"
-                          DownsampleToViewSize="true"
-                          Source="{Binding Picture}" >
-                                    <forms1:CachedImage.GestureRecognizers>
-                                  <TapGestureRecognizer
-                                          Tapped="OnImageDoubleTap"
-                                          NumberOfTapsRequired="1" />
-                                </forms1:CachedImage.GestureRecognizers>
-                      </forms1:CachedImage>
+                        <forms1:CachedImage
+                            Aspect="AspectFill"
+                            BackgroundColor="White"
+                            DownsampleToViewSize="true"
+                            Source="{Binding Picture}">
+                            <forms1:CachedImage.GestureRecognizers>
+                                <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="OnImageDoubleTap" />
+                            </forms1:CachedImage.GestureRecognizers>
+                        </forms1:CachedImage>
 
-                              </DataTemplate>
+                    </DataTemplate>
                 </forms:CarouselView.ItemTemplate>
             </forms:CarouselView>
             <ukrGo:CarouselIndicators

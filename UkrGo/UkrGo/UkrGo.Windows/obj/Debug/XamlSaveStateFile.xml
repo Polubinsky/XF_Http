@@ -9,7 +9,7 @@
     <ReferenceAssembly PathName="d:\projects\xf_http\ukrgo\packages\htmlagilitypack.1.4.9.5\lib\netcore45\htmlagilitypack.dll" HashGuid="669f6c79-8d59-33c1-db8d-313bd7b45222" />
     <ReferenceAssembly PathName="d:\projects\xf_http\ukrgo\packages\microsoft.net.http.2.2.29\lib\win8\system.net.http.extensions.dll" HashGuid="b50282f8-b9f8-4408-8d49-ba2efe301624" />
     <ReferenceAssembly PathName="d:\projects\xf_http\ukrgo\packages\microsoft.net.http.2.2.29\lib\win8\system.net.http.primitives.dll" HashGuid="7b71418d-e056-7613-c839-85fb8f6472a6" />
-    <ReferenceAssembly PathName="d:\projects\xf_http\ukrgo\ukrgo\ukrgo\bin\debug\ukrgo.dll" HashGuid="d0c3b9bf-2f5d-a8d5-3dd8-328361af7527" />
+    <ReferenceAssembly PathName="d:\projects\xf_http\ukrgo\ukrgo\ukrgo\bin\debug\ukrgo.dll" HashGuid="a20b41df-0b42-9d8c-4db1-8181057a843a" />
     <ReferenceAssembly PathName="d:\projects\xf_http\ukrgo\packages\xamarin.forms.2.3.3.168\lib\win81\xamarin.forms.core.dll" HashGuid="8fd6d715-5b1e-67fd-feee-b3bb9cc9acd7" />
     <ReferenceAssembly PathName="d:\projects\xf_http\ukrgo\packages\xamarin.forms.2.3.3.168\lib\win81\xamarin.forms.platform.dll" HashGuid="6b938cd4-44c0-2618-7eb6-4caa3f482076" />
     <ReferenceAssembly PathName="d:\projects\xf_http\ukrgo\packages\xamarin.forms.2.3.3.168\lib\win81\xamarin.forms.platform.winrt.dll" HashGuid="fe4acc44-27ba-0e4e-a08b-26ae7dccb678" />

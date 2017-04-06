@@ -4,6 +4,8 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Plugin.Permissions;
+using Plugin.Permissions.Abstractions;
 using UkrGo.Interfaces;
 using UkrGo.Model;
 using Xamarin.Forms;
@@ -41,6 +43,7 @@ namespace UkrGo.ViewModel
                 if (value == _link) return;
                 _link = value;
                 IsLoading = true;
+                IsSaving = false;
                 IsDataReady = false;
                 Task.Run(async () =>
                 {
@@ -48,6 +51,7 @@ namespace UkrGo.ViewModel
                     Data = await WebManager.GetDataByLink(_link);
                     IsLoading = false;
                     IsDataReady = true;
+                    IsSaving = true;
                 }
                 );
 
@@ -119,9 +123,15 @@ namespace UkrGo.ViewModel
                     (async () =>
                     {
                         IsSaving = false;
-                        IScreenshotManager sm = DependencyService.Get<IScreenshotManager>();
-                        byte[] b = await sm.CaptureAsync();
-                        sm.SavePictureToDisk("ukrgo", b);
+                        var status = await CrossPermissions.Current.CheckPermissionStatusAsync(Permission.Storage);
+                        if (status != PermissionStatus.Granted)
+                            status = (await CrossPermissions.Current.RequestPermissionsAsync(Permission.Storage))[Permission.Storage];
+                        if (status == PermissionStatus.Granted)
+                        {
+                            IScreenshotManager sm = DependencyService.Get<IScreenshotManager>();
+                            byte[] b = await sm.CaptureAsync();
+                            sm.SavePictureToDisk("ukrgo", b);
+                        }
                         IsSaving = true;
                     }));
             }

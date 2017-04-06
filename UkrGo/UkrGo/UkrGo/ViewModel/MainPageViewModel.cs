@@ -75,7 +75,7 @@ namespace UkrGo.ViewModel
             ObservableCollection<RowData> rows =
                 await
                     WebManager.LoadItemsAsync(
-                        @"http://kiev.ukrgo.com/view_subsection.php?id_subsection=163&search=&page=" + pageId);
+                        @"http://kiev.ukrgo.com/view_subsection.php?id_subsection=146&search=&page=" + pageId);
             Rows.RemoveAt(Rows.Count - 1);
             foreach (RowData rowData in rows)
             {
@@ -100,7 +100,7 @@ namespace UkrGo.ViewModel
             IsBusy = true;
             RefreshCommand.ChangeCanExecute();
             Rows = await WebManager.LoadItemsAsync(@"http://kiev.ukrgo.com/view_subsection.php?id_subsection=146");
-         //   Rows.Add(GetMoreRowData());
+            Rows.Add(GetMoreRowData());
             IsBusy = false;
             RefreshCommand.ChangeCanExecute();
         }

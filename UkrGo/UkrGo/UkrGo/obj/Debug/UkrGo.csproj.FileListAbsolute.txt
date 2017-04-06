@@ -107,6 +107,15 @@ D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo\obj\Debug\UkrGo.Views.DetailPage.xaml.g.cs
 D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo\obj\Debug\UkrGo.Views.ImageViewPage.xaml.g.cs
 D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo\obj\Debug\UkrGo.dll
 D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo\obj\Debug\UkrGo.pdb
+D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo\obj\Debug\UkrGo.csprojResolveAssemblyReference.cache
+D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\Plugin.Permissions.Abstractions.dll
+D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\Plugin.Permissions.dll
+D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\Plugin.Permissions.pdb
+D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\Plugin.Permissions.xml
+D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\Plugin.Permissions.Abstractions.pdb
+D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\Plugin.Permissions.Abstractions.xml
+D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo\obj\Debug\UkrGo.dll.mdb
+D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\UkrGo.dll.mdb
 D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo\obj\Debug\UkrGo.dll.mdb
 D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\UkrGo.dll.mdb
 D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo\obj\Debug\UkrGo.dll.mdb

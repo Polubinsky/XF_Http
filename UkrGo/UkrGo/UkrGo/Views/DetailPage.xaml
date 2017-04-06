@@ -21,7 +21,7 @@
                                                               Factor=0.28}"
             VerticalOptions="CenterAndExpand"
             Color="Gray" />
-       
+
         <Button
             BackgroundColor="Green"
             Command="{Binding SaveCommand}"

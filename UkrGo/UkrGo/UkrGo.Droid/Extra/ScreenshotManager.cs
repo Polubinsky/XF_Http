@@ -40,7 +40,7 @@ namespace UkrGo.Droid.Extra
 
             using (var stream = new MemoryStream())
             {
-                await bitmap.CompressAsync(Bitmap.CompressFormat.Png, 0, stream);
+                await bitmap.CompressAsync(Bitmap.CompressFormat.Jpeg, 30, stream);
                 bitmapData = stream.ToArray();
             }
 
@@ -60,7 +60,9 @@ namespace UkrGo.Droid.Extra
                 //mediascan adds the saved image into the gallery
                 var mediaScanIntent = new Intent(Intent.ActionMediaScannerScanFile);
                 mediaScanIntent.SetData(Android.Net.Uri.FromFile(new Java.IO.File(filePath)));
-                Xamarin.Forms.Forms.Context.SendBroadcast(mediaScanIntent);
+                Forms.Context.SendBroadcast(mediaScanIntent);
+                Toast.MakeText(Activity, filePath + " saved ", ToastLength.Long);
+
             }
             catch (System.Exception e)
             {

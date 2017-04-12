@@ -49,7 +49,7 @@ namespace UkrGo.Droid.Extra
 
         public void SavePictureToDisk(string filename, byte[] imageData)
         {
-            var dir = Android.OS.Environment.GetExternalStoragePublicDirectory(Android.OS.Environment.DirectoryDcim);
+            var dir = Android.OS.Environment.GetExternalStoragePublicDirectory(Android.OS.Environment.DirectoryPictures);
             var pictures = dir.AbsolutePath;
             //adding a time stamp time file name to allow saving more than one image... otherwise it overwrites the previous saved image of the same name
             string name = filename + System.DateTime.Now.ToString("yyyyMMddHHmmssfff") + ".png";

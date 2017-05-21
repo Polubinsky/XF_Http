@@ -22,11 +22,11 @@
             VerticalOptions="CenterAndExpand"
             Color="Gray" />
 
-        <Button
+        <!--<Button
             BackgroundColor="Green"
             Command="{Binding SaveCommand}"
             IsVisible="{Binding IsSaving, Mode=TwoWay}"
-            Text="Save" />
+            Text="Save" />-->
         <Grid
             Margin="8"
             IsVisible="{Binding IsDataReady, Mode=TwoWay}"

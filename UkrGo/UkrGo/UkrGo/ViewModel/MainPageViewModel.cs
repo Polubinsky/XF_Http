@@ -17,6 +17,8 @@ namespace UkrGo.ViewModel
         private int pageId = 1;
         private ObservableCollection<RowData> _rows = new ObservableCollection<RowData>();
 
+
+
         public ObservableCollection<RowData> Rows
         {
             get { return _rows; }
@@ -31,7 +33,7 @@ namespace UkrGo.ViewModel
 
         public MainPageViewModel()
         {
-            
+
             Task.Run(() =>
                 RefreshCommand.Execute(null));
         }
@@ -62,12 +64,13 @@ namespace UkrGo.ViewModel
             get { return _nextDataCommand ?? (_nextDataCommand = new Command(async () => await UpdateNextRowsCommand())); }
         }
 
+        public string Url { get; set; }
         private async Task UpdateNextRowsCommand()
         {
             if (IsBusy)
                 return;
 
-            pageId ++;
+            pageId++;
             IsBusy = true;
             RefreshCommand.ChangeCanExecute();
 
@@ -75,7 +78,7 @@ namespace UkrGo.ViewModel
             ObservableCollection<RowData> rows =
                 await
                     WebManager.LoadItemsAsync(
-                        @"http://kiev.ukrgo.com/view_subsection.php?id_subsection=146&search=&dstr[]=10&dstr[]=11&dstr[]=5&page=" + pageId);
+                        Url + "&page=" + pageId);
             Rows.RemoveAt(Rows.Count - 1);
             foreach (RowData rowData in rows)
             {
@@ -94,12 +97,13 @@ namespace UkrGo.ViewModel
 
         private async Task UpdateRowsCommand()
         {
+            if (string.IsNullOrEmpty(Url)) return;
             if (IsBusy)
                 return;
             pageId = 1;
             IsBusy = true;
             RefreshCommand.ChangeCanExecute();
-            Rows = await WebManager.LoadItemsAsync(@"http://kiev.ukrgo.com/view_subsection.php?id_subsection=146&search=&dstr[]=10&dstr[]=11&dstr[]=5");
+            Rows = await WebManager.LoadItemsAsync(Url);
             Rows.Add(GetMoreRowData());
             IsBusy = false;
             RefreshCommand.ChangeCanExecute();

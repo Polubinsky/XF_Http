@@ -11,6 +11,8 @@ using FFImageLoading;
 using UkrGo.Droid.Extra;
 using UkrGo.Interfaces;
 using Xamarin.Forms;
+using Android.Util;
+using Acr.UserDialogs;
 
 namespace UkrGo.Droid
 {
@@ -25,7 +27,9 @@ namespace UkrGo.Droid
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
-            
+
+            UserDialogs.Init(() => (Activity)Forms.Context);
+
             LoadApplication(new App());
            
 
@@ -38,7 +42,7 @@ namespace UkrGo.Droid
             base.OnTrimMemory(level);
         }
 
-        
+       
     }
 }
 

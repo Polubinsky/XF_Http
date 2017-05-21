@@ -5,6 +5,9 @@ using System.Text;
 using DLToolkit.Forms.Controls;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using UkrGo.Data;
+using UkrGo.Interfaces;
+using UkrGo.Views;
 
 
 namespace UkrGo
@@ -13,6 +16,22 @@ namespace UkrGo
     {
         public static double ScreenWidth;
         public static double ScreenHeight;
+
+        static LinkItemDatabase database;
+
+        public static LinkItemDatabase Database
+        {
+            get
+            {
+                if (database == null)
+                {
+                    database = new LinkItemDatabase(DependencyService.Get<IFileHelper>().GetLocalFilePath("LinkSQLite.db3"));
+                }
+                return database;
+            }
+        }
+
+
         public App()
         {
             InitializeComponent();
@@ -29,7 +48,7 @@ namespace UkrGo
         public static Page GetMainPage()
         {
           
-            return new NavigationPage(new MainPage());
+            return new NavigationPage(new TopicPage());
         }
 
         protected override void OnStart()

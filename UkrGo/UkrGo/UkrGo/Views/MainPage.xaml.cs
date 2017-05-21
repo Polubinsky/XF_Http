@@ -36,6 +36,7 @@ namespace UkrGo
                 ((MainPageViewModel) BindingContext).NextDataCommand.Execute(null);
                 return;
             }
+            
             if (rd != null)
                 Navigation.PushAsync(new DetailPage(rd.Link), true);
         }

@@ -36,10 +36,12 @@ namespace UkrGo.Droid
 
         public void OnActivityDestroyed(Activity activity)
         {
+            
         }
 
         public void OnActivityPaused(Activity activity)
         {
+           
         }
 
         public void OnActivityResumed(Activity activity)

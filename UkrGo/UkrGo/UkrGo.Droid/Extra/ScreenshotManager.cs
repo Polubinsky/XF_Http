@@ -14,6 +14,7 @@ using Android.Widget;
 using UkrGo.Droid.Extra;
 using UkrGo.Interfaces;
 using Xamarin.Forms;
+using Plugin.CurrentActivity;
 
 [assembly: Xamarin.Forms.Dependency(typeof(ScreenshotManager))]
 namespace UkrGo.Droid.Extra
@@ -24,8 +25,9 @@ namespace UkrGo.Droid.Extra
 
         public async Task<byte[]> CaptureAsync()
         {
-            Activity = Forms.Context as Activity;
-            
+
+            Activity = CrossCurrentActivity.Current.Activity;
+
             if (Activity == null)
             {
                 throw new Exception("You have to set ScreenshotManager.Activity in your Android project");
@@ -43,7 +45,7 @@ namespace UkrGo.Droid.Extra
                 await bitmap.CompressAsync(Bitmap.CompressFormat.Jpeg, 30, stream);
                 bitmapData = stream.ToArray();
             }
-
+            
             return bitmapData;
         }
 

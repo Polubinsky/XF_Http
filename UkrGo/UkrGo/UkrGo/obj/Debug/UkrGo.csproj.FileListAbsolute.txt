@@ -120,3 +120,7 @@ D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\SQLitePCLRaw.core.dll
 D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\SQLite-net.xml
 D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo\obj\Debug\UkrGo.dll.mdb
 D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\UkrGo.dll.mdb
+D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo\obj\Debug\UkrGo.dll.mdb
+D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\UkrGo.dll.mdb
+D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo\obj\Debug\UkrGo.dll.mdb
+D:\Projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\UkrGo.dll.mdb

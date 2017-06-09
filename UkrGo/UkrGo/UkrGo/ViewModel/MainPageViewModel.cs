@@ -82,7 +82,8 @@ namespace UkrGo.ViewModel
             Rows.RemoveAt(Rows.Count - 1);
             foreach (RowData rowData in rows)
             {
-                Rows.Add(rowData);
+                if (!Rows.Select(a => a.Link == rowData.Link).Any())
+                    Rows.Add(rowData);
             }
             Rows.Add(GetMoreRowData());
             IsBusy = false;

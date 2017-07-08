@@ -1,9 +1,5 @@
 ﻿using FFImageLoading.Forms;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UkrGo.ViewModel;
 using Xamarin.Forms;
 
@@ -22,7 +18,7 @@ namespace UkrGo.Views
         void OnImageDoubleTap(object sender, EventArgs args)
         {
             var imageSender = (CachedImage)sender;
-            Navigation.PushAsync(new ImageViewPage(((UriImageSource)imageSender.Source).Uri.OriginalString), true);
+            Navigation.PushAsync(new ImageViewPage((BindingContext as DetailPageViewModel).Data), true);
         }
     }
 }

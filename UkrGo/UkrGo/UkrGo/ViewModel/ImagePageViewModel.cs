@@ -3,24 +3,36 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UkrGo.Model;
 
 namespace UkrGo.ViewModel
 {
     public class ImagePageViewModel : BaseViewModel
     {
-        public ImagePageViewModel(string link)
+        public ImagePageViewModel(DetailData data)
         {
-            Link = link;
+            Data = data;
         }
 
-        private string _link;
-        public string Link
+        private DetailData _data;
+        public DetailData Data
         {
-            get { return _link; }
+            get { return _data; }
             set
             {
-                _link = value;
-                OnPropertyChanged("Link");
+                _data = value;
+                OnPropertyChanged("Data");
+            }
+        }
+
+        private int _position;
+        public int Position
+        {
+            get { return _position; }
+            set
+            {
+                _position = value;
+                OnPropertyChanged("Position");
             }
         }
     }

@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using FFImageLoading.Forms;
-using UkrGo.Model;
+﻿using UkrGo.Model;
 using UkrGo.ViewModel;
 using UkrGo.Views;
 using Xamarin.Forms;
@@ -19,7 +12,7 @@ namespace UkrGo
         {
             InitializeComponent();
            
-            BindingContext = new MainPageViewModel();
+           // BindingContext = new MainPageViewModel(st);
             flvControl.FlowItemTapped += FlvControlOnFlowItemTapped;
             
             NavigationPage.SetHasNavigationBar(this, false);

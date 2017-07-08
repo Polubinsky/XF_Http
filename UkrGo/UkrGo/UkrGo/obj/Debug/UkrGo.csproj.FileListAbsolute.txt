@@ -55,4 +55,3 @@ P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\obj\Debug\UkrGo.Views.AddTopicPage.xaml.g.
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\obj\Debug\UkrGo.Views.TopicPage.xaml.g.cs
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\obj\Debug\UkrGo.dll
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\obj\Debug\UkrGo.pdb
-P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\obj\Debug\UkrGo.csprojResolveAssemblyReference.cache

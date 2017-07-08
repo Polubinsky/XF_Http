@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
+﻿using System.Collections.ObjectModel;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Input;
 using UkrGo.Model;
 using Xamarin.Forms;
 
@@ -31,9 +26,9 @@ namespace UkrGo.ViewModel
 
 
 
-        public MainPageViewModel()
+        public MainPageViewModel(string url)
         {
-
+            _url = url;
             Task.Run(() =>
                 RefreshCommand.Execute(null));
         }
@@ -64,7 +59,19 @@ namespace UkrGo.ViewModel
             get { return _nextDataCommand ?? (_nextDataCommand = new Command(async () => await UpdateNextRowsCommand())); }
         }
 
-        public string Url { get; set; }
+        string _url;
+        public string Url
+        {
+            get
+            {
+                return _url;
+            }
+            set
+            {
+                _url = value;
+                OnPropertyChanged("Url");
+            }
+        }
         private async Task UpdateNextRowsCommand()
         {
             if (IsBusy)

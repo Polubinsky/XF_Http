@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using UkrGo.Model;
 using UkrGo.ViewModel;
 using Xamarin.Forms;
 
@@ -10,10 +6,10 @@ namespace UkrGo.Views
 {
     public partial class ImageViewPage : ContentPage
     {
-        public ImageViewPage(string link)
+        public ImageViewPage(DetailData data)
         {
             InitializeComponent();
-            BindingContext = new ImagePageViewModel(link);
+            BindingContext = new ImagePageViewModel(data);
             NavigationPage.SetHasNavigationBar(this, false);
         }
 

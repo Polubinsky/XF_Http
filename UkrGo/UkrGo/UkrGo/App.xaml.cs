@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using DLToolkit.Forms.Controls;
+﻿using DLToolkit.Forms.Controls;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 using UkrGo.Data;
 using UkrGo.Interfaces;
 using UkrGo.Views;

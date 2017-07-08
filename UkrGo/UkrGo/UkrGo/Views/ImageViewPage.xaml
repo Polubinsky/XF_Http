@@ -2,28 +2,44 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="UkrGo.Views.ImageViewPage"
-   xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
-    xmlns:controls="clr-namespace:UkrGo.Controls;assembly=UkrGo"
-             xmlns:fftransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations">
+  xmlns:forms="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.CarouselView"
+    xmlns:forms1="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+    xmlns:ukrGo="clr-namespace:UkrGo;assembly=UkrGo">
 
-  <ContentPage.Content>
-    <ScrollView>
-     
-     
-  <controls:PinchToZoomContainer>
-                            <controls:PinchToZoomContainer.Content>
+    <ContentPage.Content>
+        <Grid
+            Margin="8"
+            
+            RowSpacing="0">
 
-                              <ffimageloading:CachedImage
-                                  Aspect="AspectFill"
-                                  BackgroundColor="White"
-                                  DownsampleToViewSize="true"
-                                  Source="{Binding Link}">
-                                
-                              </ffimageloading:CachedImage>
-                               
-                            </controls:PinchToZoomContainer.Content>
-                        </controls:PinchToZoomContainer>
-      
-    </ScrollView>
-  </ContentPage.Content>
+            <forms:CarouselView
+                x:Name="csImages"
+                Grid.Row="0"
+                ItemsSource="{Binding Data.ImageLinks}"
+                Position="{Binding Position, Mode=TwoWay}">
+                <forms:CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <forms1:CachedImage
+                            Aspect="AspectFill"
+                            BackgroundColor="White"
+                            DownsampleToViewSize="true"
+                            Source="{Binding Picture}">
+                           
+                        </forms1:CachedImage>
+
+                    </DataTemplate>
+                </forms:CarouselView.ItemTemplate>
+            </forms:CarouselView>
+            <ukrGo:CarouselIndicators
+                Grid.Row="0"
+                Margin="10"
+                IndicatorHeight="16"
+                IndicatorWidth="16"
+                ItemsSource="{Binding Data.ImageLinks}"
+                Position="{Binding Position}"
+                SelectedIndicator="selected_circle.png"
+                UnselectedIndicator="unselected_circle.png"
+                VerticalOptions="End" />
+        </Grid>
+    </ContentPage.Content>
 </ContentPage>

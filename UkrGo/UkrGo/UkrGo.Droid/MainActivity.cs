@@ -3,15 +3,9 @@
 using Android.App;
 using Android.Content;
 using Android.Content.PM;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
 using Android.OS;
 using FFImageLoading;
-using UkrGo.Droid.Extra;
-using UkrGo.Interfaces;
 using Xamarin.Forms;
-using Android.Util;
 using Acr.UserDialogs;
 
 namespace UkrGo.Droid

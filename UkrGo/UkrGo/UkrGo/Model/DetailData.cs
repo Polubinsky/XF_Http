@@ -1,11 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 
 namespace UkrGo.Model
 {
@@ -18,6 +14,7 @@ namespace UkrGo.Model
         {
             get
             {
+                if (DetailString == null) return string.Empty;
                 try
                 {
                     if (DetailString.Length >= 4)

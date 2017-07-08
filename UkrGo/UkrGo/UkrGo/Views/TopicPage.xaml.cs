@@ -1,19 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UkrGo.Data;
 using UkrGo.ViewModel;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace UkrGo.Views
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
+
     public partial class TopicPage : ContentPage
     {
+        IList<Topic> _topics;
         public TopicPage()
         {
             InitializeComponent();
@@ -23,8 +19,8 @@ namespace UkrGo.Views
         {
             base.OnAppearing();
 
-            
-            listView.ItemsSource = await App.Database.GetItemsAsync();
+            _topics = await App.Database.GetItemsAsync();
+            listView.ItemsSource = _topics;
         }
 
         async void OnItemAdded(object sender, EventArgs e)
@@ -42,8 +38,21 @@ namespace UkrGo.Views
 
             await Navigation.PushAsync(new MainPage
             {
-                BindingContext = new MainPageViewModel() { Url = (e.SelectedItem as Topic).URL }
+                BindingContext = new MainPageViewModel((e.SelectedItem as Topic).URL)
             });
         }
+
+        public void OnMore(object sender, EventArgs e)
+        {
+            var mi = ((MenuItem)sender);
+            DisplayAlert("More Context Action", mi.CommandParameter + " more context action", "OK");
+        }
+
+        public void OnDelete(object sender, EventArgs e)
+        {
+            var mi = ((MenuItem)sender);
+            DisplayAlert("Delete Context Action", mi.CommandParameter + " delete context action", "OK");
+        }
+
     }
 }

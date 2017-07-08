@@ -1,16 +1,11 @@
 ﻿using Acr.UserDialogs;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UkrGo.Data;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace UkrGo.Views
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
+
     public partial class AddTopicPage : ContentPage
     {
         private string _currentUrl;

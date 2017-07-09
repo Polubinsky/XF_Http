@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="UkrGo.Views.ImageViewPage"
-  xmlns:forms="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.CarouselView"
+ xmlns:controls="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
     xmlns:forms1="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
     xmlns:ukrGo="clr-namespace:UkrGo;assembly=UkrGo">
 
@@ -12,12 +12,12 @@
             
             RowSpacing="0">
 
-            <forms:CarouselView
+            <controls:CarouselViewControl
                 x:Name="csImages"
-                Grid.Row="0"
-                ItemsSource="{Binding Data.ImageLinks}"
+                Grid.Row="0" ShowIndicators="True"
+                ItemsSource="{Binding Data.ImageLinks}" IndicatorsShape="Square"
                 Position="{Binding Position, Mode=TwoWay}">
-                <forms:CarouselView.ItemTemplate>
+                <controls:CarouselViewControl.ItemTemplate>
                     <DataTemplate>
                         <forms1:CachedImage
                             Aspect="AspectFill"
@@ -28,18 +28,9 @@
                         </forms1:CachedImage>
 
                     </DataTemplate>
-                </forms:CarouselView.ItemTemplate>
-            </forms:CarouselView>
-            <ukrGo:CarouselIndicators
-                Grid.Row="0"
-                Margin="10"
-                IndicatorHeight="16"
-                IndicatorWidth="16"
-                ItemsSource="{Binding Data.ImageLinks}"
-                Position="{Binding Position}"
-                SelectedIndicator="selected_circle.png"
-                UnselectedIndicator="unselected_circle.png"
-                VerticalOptions="End" />
+                </controls:CarouselViewControl.ItemTemplate>
+            </controls:CarouselViewControl>
+           
         </Grid>
     </ContentPage.Content>
 </ContentPage>

@@ -2,7 +2,9 @@
 using System;
 using UkrGo.ViewModel;
 using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 
+[assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace UkrGo.Views
 {
     public partial class DetailPage : ContentPage

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UkrGo.Data;
 using UkrGo.ViewModel;
 using Xamarin.Forms;
@@ -19,6 +20,11 @@ namespace UkrGo.Views
         {
             base.OnAppearing();
 
+            await RefreshList();
+        }
+
+        private async Task RefreshList()
+        {
             _topics = await App.Database.GetItemsAsync();
             listView.ItemsSource = _topics;
         }
@@ -33,9 +39,6 @@ namespace UkrGo.Views
 
         async void OnListItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            //((App)App.Current).ResumeAtTodoId = (e.SelectedItem as TodoItem).ID;
-            //Debug.WriteLine("setting ResumeAtTodoId = " + (e.SelectedItem as TodoItem).ID);
-
             await Navigation.PushAsync(new MainPage
             {
                 BindingContext = new MainPageViewModel((e.SelectedItem as Topic).URL)
@@ -48,10 +51,11 @@ namespace UkrGo.Views
             DisplayAlert("More Context Action", mi.CommandParameter + " more context action", "OK");
         }
 
-        public void OnDelete(object sender, EventArgs e)
+        public async void OnDelete(object sender, EventArgs e)
         {
             var mi = ((MenuItem)sender);
-            DisplayAlert("Delete Context Action", mi.CommandParameter + " delete context action", "OK");
+            await App.Database.DeleteItemAsync(mi.CommandParameter as Topic);
+            await RefreshList();
         }
 
     }

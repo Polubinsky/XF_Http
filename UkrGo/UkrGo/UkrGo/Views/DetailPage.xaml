@@ -4,7 +4,7 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:converters="clr-namespace:UkrGo.Converters;assembly=UkrGo"
-    xmlns:forms="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.CarouselView"
+    xmlns:controls="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
     xmlns:forms1="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
     xmlns:ukrGo="clr-namespace:UkrGo;assembly=UkrGo">
     <StackLayout>
@@ -35,12 +35,13 @@
                 <RowDefinition Height=".7*" />
                 <RowDefinition Height=".3*" />
             </Grid.RowDefinitions>
-            <forms:CarouselView
+            <controls:CarouselViewControl
                 x:Name="csImages"
                 Grid.Row="0"
-                ItemsSource="{Binding Data.ImageLinks}"
+                ItemsSource="{Binding Data.ImageLinks}" ShowIndicators="True"
                 Position="{Binding Position, Mode=TwoWay}">
-                <forms:CarouselView.ItemTemplate>
+                
+                <controls:CarouselViewControl.ItemTemplate>
                     <DataTemplate>
 
                         <forms1:CachedImage
@@ -54,18 +55,9 @@
                         </forms1:CachedImage>
 
                     </DataTemplate>
-                </forms:CarouselView.ItemTemplate>
-            </forms:CarouselView>
-            <ukrGo:CarouselIndicators
-                Grid.Row="0"
-                Margin="10"
-                IndicatorHeight="16"
-                IndicatorWidth="16"
-                ItemsSource="{Binding Data.ImageLinks}"
-                Position="{Binding Position}"
-                SelectedIndicator="selected_circle.png"
-                UnselectedIndicator="unselected_circle.png"
-                VerticalOptions="End" />
+                    </controls:CarouselViewControl.ItemTemplate>
+            </controls:CarouselViewControl>
+           
             <ScrollView Grid.Row="1">
                 <StackLayout Padding="12">
                     <Label

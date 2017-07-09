@@ -3,6 +3,7 @@ P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\UkrGo.dll
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\UkrGo.pdb
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\Acr.UserDialogs.dll
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\Acr.UserDialogs.Interface.dll
+P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\CarouselView.FormsPlugin.Abstractions.dll
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\DLToolkit.Forms.Controls.FlowListView.dll
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\FFImageLoading.dll
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\FFImageLoading.Forms.dll
@@ -19,7 +20,6 @@ P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\SQLitePCLRaw.core.dll
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\System.Net.Http.dll
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\System.Net.Http.Extensions.dll
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\System.Net.Http.Primitives.dll
-P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\Xamarin.Forms.CarouselView.dll
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\Xamarin.Forms.Core.dll
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\Xamarin.Forms.Platform.dll
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\Xamarin.Forms.Xaml.dll

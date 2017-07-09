@@ -1,4 +1,5 @@
-﻿using System.Collections.ObjectModel;
+﻿using Acr.UserDialogs;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Threading.Tasks;
 using UkrGo.Model;
@@ -81,15 +82,13 @@ namespace UkrGo.ViewModel
             IsBusy = true;
             RefreshCommand.ChangeCanExecute();
 
-
-            ObservableCollection<RowData> rows =
-                await
-                    WebManager.LoadItemsAsync(
-                        Url + "&page=" + pageId);
+            string url = Url + "&page=" + pageId;
+           
+            ObservableCollection<RowData> rows = await WebManager.LoadItemsAsync(url);
             Rows.RemoveAt(Rows.Count - 1);
             foreach (RowData rowData in rows)
             {
-                if (!Rows.Select(a => a.Link == rowData.Link).Any())
+                //if (!Rows.Select(a => a.Link == rowData.Link).Any())
                     Rows.Add(rowData);
             }
             Rows.Add(GetMoreRowData());

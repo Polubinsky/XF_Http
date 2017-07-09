@@ -12,6 +12,7 @@ namespace UkrGo.Data
         {
             database = new SQLiteAsyncConnection(dbPath);
             database.CreateTableAsync<Topic>().Wait();
+           // database.CreateTableAsync<Favourite>().Wait();
         }
 
         public Task<List<Topic>> GetItemsAsync()

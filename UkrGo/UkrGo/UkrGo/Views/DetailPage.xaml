@@ -70,8 +70,13 @@
                         FontSize="16"
                         HorizontalOptions="StartAndExpand"
                         Text="{Binding Data.Contact}"
-                        TextColor="Black"
-                        VerticalOptions="CenterAndExpand" />
+                        TextColor="Blue"
+                        VerticalOptions="CenterAndExpand">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped = "OnContactTapped"/>
+
+                        </Label.GestureRecognizers>
+                    </Label>
                     <Label
                         FontSize="16"
                         HorizontalOptions="StartAndExpand"

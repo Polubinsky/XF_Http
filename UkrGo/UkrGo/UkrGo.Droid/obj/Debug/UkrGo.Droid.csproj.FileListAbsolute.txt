@@ -131,3 +131,11 @@ P:\projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\obj\Debug\android\assets\UkrGo.Droid
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
+P:\projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\Plugin.Messaging.Abstractions.dll
+P:\projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\Plugin.Messaging.dll
+P:\projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\Plugin.Messaging.pdb
+P:\projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\Plugin.Messaging.xml
+P:\projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\Plugin.Messaging.dll.mdb
+P:\projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\Plugin.Messaging.Abstractions.pdb
+P:\projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\Plugin.Messaging.Abstractions.xml
+P:\projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\Plugin.Messaging.Abstractions.dll.mdb

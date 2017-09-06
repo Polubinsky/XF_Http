@@ -1,4 +1,5 @@
 ﻿using FFImageLoading.Forms;
+using Plugin.Messaging;
 using System;
 using UkrGo.ViewModel;
 using Xamarin.Forms;
@@ -21,6 +22,14 @@ namespace UkrGo.Views
         {
             var imageSender = (CachedImage)sender;
             Navigation.PushAsync(new ImageViewPage((BindingContext as DetailPageViewModel).Data), true);
+        }
+
+        private void OnContactTapped(object sender, EventArgs e)
+        {
+
+            var phoneCallTask = CrossMessaging.Current.PhoneDialer;
+            if (phoneCallTask.CanMakePhoneCall)
+                phoneCallTask.MakePhoneCall(((BindingContext as DetailPageViewModel).Data).Contact);
         }
     }
 }

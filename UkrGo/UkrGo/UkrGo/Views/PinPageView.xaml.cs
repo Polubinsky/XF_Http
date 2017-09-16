@@ -15,6 +15,7 @@ namespace UkrGo.Views
         public PinPageView()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
             BindingContext = new PinPageViewModel();
         }
     }

@@ -3680,6 +3680,8 @@ namespace UkrGo.Droid
 			global::FormsPinView.Droid.Resource.Styleable.ViewStubCompat_android_id = global::UkrGo.Droid.Resource.Styleable.ViewStubCompat_android_id;
 			global::FormsPinView.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId = global::UkrGo.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId;
 			global::FormsPinView.Droid.Resource.Styleable.ViewStubCompat_android_layout = global::UkrGo.Droid.Resource.Styleable.ViewStubCompat_android_layout;
+			global::PCLCrypto.Resource.String.ApplicationName = global::UkrGo.Droid.Resource.String.ApplicationName;
+			global::PCLCrypto.Resource.String.Hello = global::UkrGo.Droid.Resource.String.Hello;
 			global::Splat.Resource.String.library_name = global::UkrGo.Droid.Resource.String.library_name;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::UkrGo.Droid.Resource.Attribute.actionBarSize;
 		}
@@ -6792,6 +6794,12 @@ namespace UkrGo.Droid
 		
 		public partial class String
 		{
+			
+			// aapt resource value: 0x7f080028
+			public const int ApplicationName = 2131230760;
+			
+			// aapt resource value: 0x7f080027
+			public const int Hello = 2131230759;
 			
 			// aapt resource value: 0x7f08000f
 			public const int abc_action_bar_home_description = 2131230735;

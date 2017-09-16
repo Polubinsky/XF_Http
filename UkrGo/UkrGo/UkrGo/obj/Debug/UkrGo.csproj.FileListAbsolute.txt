@@ -10,6 +10,8 @@ P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\FFImageLoading.Forms.dll
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\FFImageLoading.Platform.dll
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\FFImageLoading.Transformations.dll
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\HtmlAgilityPack.dll
+P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\Plugin.Messaging.Abstractions.dll
+P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\Plugin.Messaging.dll
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\Plugin.Permissions.Abstractions.dll
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\Plugin.Permissions.dll
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\Splat.dll
@@ -33,6 +35,10 @@ P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\FFImageLoading.Platform.xml
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\FFImageLoading.Transformations.pdb
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\FFImageLoading.Transformations.xml
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\HtmlAgilityPack.pdb
+P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\Plugin.Messaging.pdb
+P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\Plugin.Messaging.xml
+P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\Plugin.Messaging.Abstractions.pdb
+P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\Plugin.Messaging.Abstractions.xml
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\Plugin.Permissions.pdb
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\Plugin.Permissions.xml
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\Plugin.Permissions.Abstractions.pdb
@@ -55,10 +61,6 @@ P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\obj\Debug\UkrGo.Views.AddTopicPage.xaml.g.
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\obj\Debug\UkrGo.Views.TopicPage.xaml.g.cs
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\obj\Debug\UkrGo.dll
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\obj\Debug\UkrGo.pdb
-P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\Plugin.Messaging.Abstractions.dll
-P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\Plugin.Messaging.dll
-P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\Plugin.Messaging.pdb
-P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\Plugin.Messaging.xml
-P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\Plugin.Messaging.Abstractions.pdb
-P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\Plugin.Messaging.Abstractions.xml
+P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\obj\Debug\UkrGo.Views.PinPageView.xaml.g.cs
+P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\FormsPinView.PCL.dll
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\obj\Debug\UkrGo.csprojResolveAssemblyReference.cache

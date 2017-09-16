@@ -8,6 +8,7 @@ using FFImageLoading;
 using Xamarin.Forms;
 using Acr.UserDialogs;
 using CarouselView.FormsPlugin.Android;
+using FormsPinView.Droid;
 
 namespace UkrGo.Droid
 {
@@ -21,8 +22,9 @@ namespace UkrGo.Droid
 
             base.OnCreate(bundle);
 
-            global::Xamarin.Forms.Forms.Init(this, bundle);
+            Forms.Init(this, bundle);
 
+            PinItemViewRenderer.Init();
             CarouselViewRenderer.Init();
 
             UserDialogs.Init(() => (Activity)Forms.Context);

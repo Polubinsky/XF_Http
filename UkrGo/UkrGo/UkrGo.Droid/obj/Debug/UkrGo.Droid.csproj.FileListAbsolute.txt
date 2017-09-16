@@ -17,6 +17,8 @@ P:\projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\FFImageLoading.Platform.dl
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\FFImageLoading.Transformations.dll
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\FormsViewGroup.dll
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\Plugin.CurrentActivity.dll
+P:\projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\Plugin.Messaging.Abstractions.dll
+P:\projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\Plugin.Messaging.dll
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\Plugin.Permissions.Abstractions.dll
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\Plugin.Permissions.dll
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\RestSharp.dll
@@ -67,6 +69,12 @@ P:\projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\FFImageLoading.Transformat
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\FormsViewGroup.pdb
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\FormsViewGroup.dll.mdb
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\Plugin.CurrentActivity.xml
+P:\projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\Plugin.Messaging.pdb
+P:\projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\Plugin.Messaging.xml
+P:\projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\Plugin.Messaging.dll.mdb
+P:\projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\Plugin.Messaging.Abstractions.pdb
+P:\projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\Plugin.Messaging.Abstractions.xml
+P:\projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\Plugin.Messaging.Abstractions.dll.mdb
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\Plugin.Permissions.pdb
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\Plugin.Permissions.xml
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\Plugin.Permissions.dll.mdb
@@ -109,6 +117,8 @@ P:\projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\obj\Debug\res\drawable\santa.png
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\obj\Debug\res\drawable\ukrgo.jpg
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\obj\Debug\R.cs.flag
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\obj\Debug\uploadflags.txt
+P:\projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\FormsPinView.Droid.dll
+P:\projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\FormsPinView.PCL.dll
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\UkrGo.dll.mdb
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\HtmlAgilityPack.dll.mdb
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\UkrGo.Droid.dll.mdb
@@ -122,6 +132,8 @@ P:\projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\obj\Debug\android\assets\FFImageLoad
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\obj\Debug\android\assets\FFImageLoading.Transformations.dll.mdb
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\obj\Debug\android\assets\FormsViewGroup.dll.mdb
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\obj\Debug\android\assets\HtmlAgilityPack.dll.mdb
+P:\projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\obj\Debug\android\assets\Plugin.Messaging.Abstractions.dll.mdb
+P:\projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\obj\Debug\android\assets\Plugin.Messaging.dll.mdb
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\obj\Debug\android\assets\Plugin.Permissions.Abstractions.dll.mdb
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\obj\Debug\android\assets\Plugin.Permissions.dll.mdb
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\obj\Debug\android\assets\Splat.dll.mdb
@@ -131,11 +143,3 @@ P:\projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\obj\Debug\android\assets\UkrGo.Droid
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
-P:\projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\Plugin.Messaging.Abstractions.dll
-P:\projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\Plugin.Messaging.dll
-P:\projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\Plugin.Messaging.pdb
-P:\projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\Plugin.Messaging.xml
-P:\projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\Plugin.Messaging.dll.mdb
-P:\projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\Plugin.Messaging.Abstractions.pdb
-P:\projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\Plugin.Messaging.Abstractions.xml
-P:\projects\XF_Http\UkrGo\UkrGo\UkrGo.Droid\bin\Debug\Plugin.Messaging.Abstractions.dll.mdb

@@ -31,25 +31,32 @@ namespace UkrGo
         public App()
         {
             InitializeComponent();
-//#if !DEBUG
-
-                FlowListView.Init();
-//#endif
-            MainPage = GetMainPage();
-
-
+            FlowListView.Init();
+           
         }
 
-
-        public static Page GetMainPage()
+        private static Page _currentPage;
+        public static Page Page
         {
-          
-            return new NavigationPage(new TopicPage());
+            get
+            {
+                return _currentPage;
+            }
+            set
+            {
+                _currentPage = value;
+            }
+        }
+
+        public Page GetMainPage()
+        {
+            Page = new NavigationPage(new PinPageView());
+            return Page;
         }
 
         protected override void OnStart()
         {
-            // Handle when your app starts
+            MainPage = GetMainPage();
         }
 
         protected override void OnSleep()
@@ -59,7 +66,7 @@ namespace UkrGo
 
         protected override void OnResume()
         {
-            // Handle when your app resumes
+            MainPage = GetMainPage();
         }
     }
 }

@@ -63,7 +63,6 @@ P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\obj\Debug\UkrGo.dll
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\obj\Debug\UkrGo.pdb
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\obj\Debug\UkrGo.Views.PinPageView.xaml.g.cs
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\FormsPinView.PCL.dll
-P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\obj\Debug\UkrGo.csprojResolveAssemblyReference.cache
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\PCLCrypto.dll
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\Validation.dll
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\PCLCrypto.xml
@@ -73,3 +72,6 @@ P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\Plugin.Settings.dll
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\Plugin.Settings.xml
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\Plugin.Settings.Abstractions.pdb
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\Plugin.Settings.Abstractions.xml
+P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\FAB.Forms.dll
+P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\FAB.Forms.xml
+P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\obj\Debug\UkrGo.csprojResolveAssemblyReference.cache

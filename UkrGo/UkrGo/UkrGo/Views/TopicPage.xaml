@@ -1,30 +1,44 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="UkrGo.Views.TopicPage">
-    <ContentPage.ToolbarItems>
-        <ToolbarItem Text="+" Clicked="OnItemAdded">
-            
-        </ToolbarItem>
-    </ContentPage.ToolbarItems>
-    <ListView x:Name="listView" Margin="20" ItemSelected="OnListItemSelected">
-        <ListView.ItemTemplate>
-            <DataTemplate>
-                <ViewCell>
-                    <ViewCell.ContextActions>
-                    <MenuItem Clicked="OnMore" CommandParameter="{Binding .}"
+             xmlns:fab="clr-namespace:FAB.Forms;assembly=FAB.Forms"
+             x:Class="UkrGo.Views.TopicPage" BackgroundColor="White">
+    <ContentPage.Content>
+        <RelativeLayout>
+            <ContentView
+				RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"
+RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1}">
+                <ListView x:Name="listView" Margin="20" ItemSelected="OnListItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.ContextActions>
+                                <MenuItem Clicked="OnMore" CommandParameter="{Binding .}"
                Text="More" />
-                    <MenuItem Clicked="OnDelete" CommandParameter="{Binding .}"
+                                <MenuItem Clicked="OnDelete" CommandParameter="{Binding .}"
                Text="Delete" IsDestructive="True" />
-                    </ViewCell.ContextActions>
+                            </ViewCell.ContextActions>
 
-                    <StackLayout Margin="20,0,0,0" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
-                        <Label Text="{Binding TopicName}" VerticalTextAlignment="Center" HorizontalOptions="StartAndExpand" />
-                        
-                    </StackLayout>
-                </ViewCell>
-               
-            </DataTemplate>
-        </ListView.ItemTemplate>
-    </ListView>
+                            <StackLayout Margin="20,0,0,0" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                                <Label Text="{Binding TopicName}" VerticalTextAlignment="Center" HorizontalOptions="StartAndExpand" />
+
+                            </StackLayout>
+                        </ViewCell>
+
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            </ContentView>
+            <fab:FloatingActionButton
+				x:Name="fabBtn"
+				Source="plus.png"
+				Size="Normal"
+				Clicked="Handle_FabClicked"
+				NormalColor="Blue"
+				RippleColor="Red"
+				RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1, Constant=-75}"
+                RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1, Constant=-75}" />
+
+    </RelativeLayout>
+    </ContentPage.Content>
 </ContentPage>

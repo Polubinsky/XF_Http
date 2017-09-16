@@ -14,6 +14,7 @@ namespace UkrGo.Views
         public TopicPage()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
         }
 
         protected override async void OnAppearing()
@@ -28,15 +29,14 @@ namespace UkrGo.Views
             _topics = await App.Database.GetItemsAsync();
             listView.ItemsSource = _topics;
         }
-
-        async void OnItemAdded(object sender, EventArgs e)
+        async void Handle_FabClicked(object sender, System.EventArgs e)
         {
             await Navigation.PushAsync(new AddTopicPage
-           {
+            {
                 BindingContext = new Topic()
             });
         }
-
+       
         async void OnListItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             await Navigation.PushAsync(new MainPage

@@ -26,7 +26,7 @@ namespace UkrGo.Droid
 
             PinItemViewRenderer.Init();
             CarouselViewRenderer.Init();
-
+            FAB.Droid.FloatingActionButtonRenderer.InitControl();
             UserDialogs.Init(() => (Activity)Forms.Context);
 
             LoadApplication(new App());

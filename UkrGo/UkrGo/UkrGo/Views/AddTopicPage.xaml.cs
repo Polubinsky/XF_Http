@@ -13,13 +13,25 @@ namespace UkrGo.Views
         {
             InitializeComponent();
             wb.Source = new UrlWebViewSource() { Url = @"http://www.kiev.ukrgo.com" };
+            
             NavigationPage.SetHasNavigationBar(this, false);
+            fabBackBtn.IsVisible = false;
+            fabBtn.IsVisible = false;
+        }
+        protected override bool OnBackButtonPressed()
+        {
+            if (wb.CanGoBack)
+                wb.GoBack();
+            else
+                Navigation.PopAsync();
+            return true;
         }
 
         async void Handle_FabClicked(object sender, EventArgs e)
         {
             PromptResult pr = await UserDialogs.Instance.PromptAsync("Название рубрики");
-            await App.Database.SaveItemAsync(new Topic() { TopicName = pr.Value, URL = _currentUrl });
+            if (pr.Ok)
+                await App.Database.SaveItemAsync(new Topic() { TopicName = pr.Value, URL = _currentUrl });
         }
 
         private void wb_Navigated(object sender, WebNavigatedEventArgs e)
@@ -27,7 +39,11 @@ namespace UkrGo.Views
             _currentUrl = e.Url;
             if (_pd != null)
                 _pd.Hide();
-            
+            fabBtn.IsVisible = true;
+#if __IOS__
+ fabBackBtn.IsVisible = true;
+#endif
+
         }
 
         IProgressDialog _pd;

@@ -15,7 +15,7 @@ namespace UkrGo.Droid.Renderers
             if (Control != null)
             {
                 Control.Settings.BuiltInZoomControls = true;
-                Control.Settings.DisplayZoomControls = true;
+                Control.Settings.DisplayZoomControls = false;
             }
             base.OnElementPropertyChanged(sender, e);
         }

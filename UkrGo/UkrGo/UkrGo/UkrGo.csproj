@@ -220,6 +220,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controls\" />
+    <Folder Include="Renderer\" />
     <Folder Include="Services\" />
   </ItemGroup>
   <ItemGroup>

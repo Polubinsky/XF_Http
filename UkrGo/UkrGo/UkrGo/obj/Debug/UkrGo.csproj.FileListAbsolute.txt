@@ -18,7 +18,6 @@ P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\FFImageLoading.dll
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\FFImageLoading.Forms.dll
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\FFImageLoading.Platform.dll
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\FFImageLoading.Transformations.dll
-P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\FormsPinView.PCL.dll
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\HtmlAgilityPack.dll
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\PCLCrypto.dll
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\Plugin.Messaging.Abstractions.dll
@@ -74,3 +73,11 @@ P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\Xamarin.Forms.Xaml.pdb
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\Xamarin.Forms.Xaml.xml
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\obj\Debug\UkrGo.dll
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\obj\Debug\UkrGo.pdb
+P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\obj\Debug\UkrGo.Controls.PinViewControl.PinView.xaml.g.cs
+P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\Plugin.Vibrate.Abstractions.dll
+P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\Plugin.Vibrate.dll
+P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\Plugin.Vibrate.pdb
+P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\Plugin.Vibrate.xml
+P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\Plugin.Vibrate.Abstractions.pdb
+P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\Plugin.Vibrate.Abstractions.xml
+P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\obj\Debug\UkrGo.csprojResolveAssemblyReference.cache

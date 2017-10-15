@@ -38,6 +38,11 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controls\PinViewControl\PinItemView.cs" />
+    <Compile Include="Controls\PinViewControl\PinView.xaml.cs">
+      <DependentUpon>PinView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PinViewControl\PinViewModel.cs" />
     <Compile Include="Converters\NegateBooleanConverter.cs" />
     <Compile Include="Data\Favourite.cs" />
     <Compile Include="Data\LinkItemDatabase.cs" />
@@ -127,10 +132,6 @@
       <HintPath>..\..\packages\Xamarin.FFImageLoading.Transformations.2.2.9-pre-331\lib\portable-net45+win8+wpa81+wp8\FFImageLoading.Transformations.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="FormsPinView.PCL, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\FormsPinView.1.0.1\lib\portable-net45+netcore45+wpa8+wp8\FormsPinView.PCL.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="HtmlAgilityPack, Version=1.5.5.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\HtmlAgilityPack.1.5.5\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid+MonoTouch\HtmlAgilityPack.dll</HintPath>
       <Private>True</Private>
@@ -161,6 +162,14 @@
     </Reference>
     <Reference Include="Plugin.Settings.Abstractions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Xam.Plugins.Settings.3.0.1\lib\netstandard1.0\Plugin.Settings.Abstractions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Plugin.Vibrate, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xam.Plugins.Vibrate.3.0.1\lib\netstandard\Plugin.Vibrate.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Plugin.Vibrate.Abstractions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xam.Plugins.Vibrate.3.0.1\lib\netstandard\Plugin.Vibrate.Abstractions.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Splat, Version=1.6.2.0, Culture=neutral, processorArchitecture=MSIL">
@@ -219,7 +228,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Controls\" />
     <Folder Include="Renderer\" />
     <Folder Include="Services\" />
   </ItemGroup>
@@ -243,6 +251,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\PinPageView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\PinViewControl\PinView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

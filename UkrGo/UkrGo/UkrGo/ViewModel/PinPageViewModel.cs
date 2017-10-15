@@ -1,8 +1,8 @@
-﻿using FormsPinView.PCL;
-using UkrGo.Views;
+﻿using UkrGo.Views;
 using Acr.UserDialogs;
 using UkrGo.Extensions;
 using UkrGo.Helpers;
+using UkrGo.Controls.PinViewControl;
 
 namespace UkrGo.ViewModel
 {

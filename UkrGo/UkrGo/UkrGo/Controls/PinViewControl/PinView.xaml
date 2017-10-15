@@ -4,7 +4,7 @@
              xmlns:local="clr-namespace:UkrGo.Controls.PinViewControl;assembly=UkrGo"
              x:Class="UkrGo.Controls.PinViewControl.PinView">
     <ContentView.Content>
-        <StackLayout>
+        <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
             <StackLayout.Margin>
                 <OnIdiom
 					x:TypeArguments="Thickness">

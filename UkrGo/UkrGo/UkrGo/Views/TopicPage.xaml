@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:fab="clr-namespace:FAB.Forms;assembly=FAB.Forms"
+             
              x:Class="UkrGo.Views.TopicPage" BackgroundColor="White">
     <ContentPage.Content>
         <RelativeLayout>
@@ -29,13 +29,17 @@ RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Pr
                 </ListView.ItemTemplate>
             </ListView>
             </ContentView>
-            <fab:FloatingActionButton
+            <Button
 				x:Name="fabBtn"
-				Source="plus.png"
-				Size="Normal"
+                WidthRequest="60"
+                HeightRequest="60"
+                BorderRadius="30"
+				Text="+"
+                FontSize="Large"
+				TextColor="White"
 				Clicked="Handle_FabClicked"
-				NormalColor="Blue"
-				RippleColor="Red"
+				BackgroundColor="OrangeRed"
+				
 				RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1, Constant=-75}"
                 RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1, Constant=-75}" />
 

@@ -13,7 +13,6 @@ P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\Acr.UserDialogs.dll
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\Acr.UserDialogs.Interface.dll
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\CarouselView.FormsPlugin.Abstractions.dll
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\DLToolkit.Forms.Controls.FlowListView.dll
-P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\FAB.Forms.dll
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\FFImageLoading.dll
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\FFImageLoading.Forms.dll
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\FFImageLoading.Platform.dll
@@ -40,7 +39,6 @@ P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\Xamarin.Forms.Platform.dll
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\Xamarin.Forms.Xaml.dll
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\Acr.UserDialogs.Interface.pdb
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\DLToolkit.Forms.Controls.FlowListView.xml
-P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\FAB.Forms.xml
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\FFImageLoading.pdb
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\FFImageLoading.xml
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\FFImageLoading.Forms.pdb
@@ -80,4 +78,3 @@ P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\Plugin.Vibrate.pdb
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\Plugin.Vibrate.xml
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\Plugin.Vibrate.Abstractions.pdb
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\Plugin.Vibrate.Abstractions.xml
-P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\obj\Debug\UkrGo.csprojResolveAssemblyReference.cache

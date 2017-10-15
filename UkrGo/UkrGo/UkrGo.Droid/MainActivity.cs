@@ -25,7 +25,6 @@ namespace UkrGo.Droid
             Forms.Init(this, bundle);
 
             CarouselViewRenderer.Init();
-            FAB.Droid.FloatingActionButtonRenderer.InitControl();
             UserDialogs.Init(() => (Activity)Forms.Context);
 
             LoadApplication(new App());

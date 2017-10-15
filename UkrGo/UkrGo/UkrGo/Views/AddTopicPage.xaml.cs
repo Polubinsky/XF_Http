@@ -15,7 +15,6 @@ namespace UkrGo.Views
             wb.Source = new UrlWebViewSource() { Url = @"http://www.kiev.ukrgo.com" };
             
             NavigationPage.SetHasNavigationBar(this, false);
-            fabBackBtn.IsVisible = false;
             fabBtn.IsVisible = false;
         }
         protected override bool OnBackButtonPressed()
@@ -40,9 +39,7 @@ namespace UkrGo.Views
             if (_pd != null)
                 _pd.Hide();
             fabBtn.IsVisible = true;
-#if __IOS__
- fabBackBtn.IsVisible = true;
-#endif
+
 
         }
 
@@ -53,10 +50,6 @@ namespace UkrGo.Views
                 _pd = UserDialogs.Instance.Loading("Please wait", null, null, true, MaskType.Clear);
             else _pd.Show();
         }
-
-        private void fabBackBtn_Clicked(object sender, EventArgs e)
-        {
-            Navigation.PopAsync();
-        }
+ 
     }
 }

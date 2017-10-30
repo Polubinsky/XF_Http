@@ -52,8 +52,10 @@
     <Compile Include="Helpers\Settings.cs" />
     <Compile Include="Interfaces\IFileHelper.cs" />
     <Compile Include="Interfaces\IScreenshotManager.cs" />
+    <Compile Include="Model\SettingsData.cs" />
     <Compile Include="ViewModel\ImagePageViewModel.cs" />
     <Compile Include="ViewModel\PinPageViewModel.cs" />
+    <Compile Include="ViewModel\SettingsPageViewModel.cs" />
     <Compile Include="Views\AddTopicPage.xaml.cs">
       <DependentUpon>AddTopicPage.xaml</DependentUpon>
     </Compile>
@@ -76,6 +78,9 @@
     <Compile Include="Managers\WebManager.cs" />
     <Compile Include="Views\PinPageView.xaml.cs">
       <DependentUpon>PinPageView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SettingsPageView.xaml.cs">
+      <DependentUpon>SettingsPageView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\TopicPage.xaml.cs">
       <DependentUpon>TopicPage.xaml</DependentUpon>
@@ -253,6 +258,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Controls\PinViewControl\PinView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\SettingsPageView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

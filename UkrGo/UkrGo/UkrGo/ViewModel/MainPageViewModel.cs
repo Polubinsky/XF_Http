@@ -2,6 +2,7 @@
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Threading.Tasks;
+using UkrGo.Helpers;
 using UkrGo.Model;
 using Xamarin.Forms;
 
@@ -25,7 +26,12 @@ namespace UkrGo.ViewModel
             }
         }
 
-
+        private ObservableCollection<RowData> RemoveDuplicateRows(ObservableCollection<RowData> rows)
+        {
+            if (Settings.RemoveDublicate)
+                return new ObservableCollection<RowData>(rows.GroupBy(x => x.MainImage.ImageSize).Select(y => y.First()).ToList());
+            else return rows;
+        }
 
         public MainPageViewModel(string url)
         {
@@ -88,9 +94,9 @@ namespace UkrGo.ViewModel
             Rows.RemoveAt(Rows.Count - 1);
             foreach (RowData rowData in rows)
             {
-                //if (!Rows.Select(a => a.Link == rowData.Link).Any())
-                    Rows.Add(rowData);
+                Rows.Add(rowData);
             }
+            Rows = RemoveDuplicateRows(Rows);
             Rows.Add(GetMoreRowData());
             IsBusy = false;
             RefreshCommand.ChangeCanExecute();
@@ -110,12 +116,14 @@ namespace UkrGo.ViewModel
             pageId = 1;
             IsBusy = true;
             RefreshCommand.ChangeCanExecute();
-            Rows = await WebManager.LoadItemsAsync(Url);
+            var rows = await WebManager.LoadItemsAsync(Url);
+            Rows = RemoveDuplicateRows(rows);
             Rows.Add(GetMoreRowData());
             IsBusy = false;
             RefreshCommand.ChangeCanExecute();
         }
 
+        
         RowData GetMoreRowData()
         {
             RowData rd = new RowData();

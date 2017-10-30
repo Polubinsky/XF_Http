@@ -7,6 +7,7 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using HtmlAgilityPack;
 using UkrGo.Model;
+using System.IO;
 
 namespace UkrGo
 {
@@ -38,17 +39,23 @@ namespace UkrGo
                     var r = new RowData
                     {
                         Link =
-                            n.ChildNodes[1].ChildNodes[1].ChildNodes[1].ChildNodes[1].ChildNodes[1].ChildNodes[1]
-                                .Attributes[0].Value,
+                            n.ChildNodes[1].ChildNodes[1].ChildNodes[1].ChildNodes[1].ChildNodes[1].ChildNodes[1].Attributes[0].Value,
                         Text = n.ChildNodes[1].ChildNodes[1].ChildNodes[1].ChildNodes[3].ChildNodes[1].InnerText,
                         Description = n.ChildNodes[1].ChildNodes[1].ChildNodes[1].ChildNodes[3].ChildNodes[5].InnerText,
                         MainImage =
                         {
-                            ImageLink =
-                                n.ChildNodes[1].ChildNodes[1].ChildNodes[1].ChildNodes[1].ChildNodes[1].ChildNodes[1]
-                                    .ChildNodes[1].Attributes[1].Value
+                            ImageLink = n.ChildNodes[1].ChildNodes[1].ChildNodes[1].ChildNodes[1].ChildNodes[1].ChildNodes[1].ChildNodes[1].Attributes[1].Value,
+
                         }
+
+
                     };
+
+                    using (HttpClient http = new HttpClient())
+                    {
+                        HttpResponseMessage mes = await http.SendAsync(new HttpRequestMessage(HttpMethod.Head, r.MainImage.Picture));
+                        r.MainImage.ImageSize = mes.Content.Headers.ContentLength;
+                    }
                     l.Add(r);
                 }
                 catch (Exception)

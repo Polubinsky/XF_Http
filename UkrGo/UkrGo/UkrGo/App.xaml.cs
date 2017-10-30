@@ -4,7 +4,7 @@ using UkrGo.Data;
 using UkrGo.Interfaces;
 using UkrGo.Views;
 using Xamarin.Forms.Xaml;
-
+using UkrGo.Helpers;
 
 namespace UkrGo
 {
@@ -50,14 +50,17 @@ namespace UkrGo
 
         public Page GetMainPage()
         {
+            //Page = new NavigationPage(new SettingsPageView());
             Page = new NavigationPage(new PinPageView());
             return Page;
         }
 
-        protected override void OnStart()
-        {
-            MainPage = GetMainPage();
-        }
+		protected override void OnStart()
+		{
+			if (Settings.AskPinCode)
+				MainPage = GetMainPage();
+			else MainPage = new NavigationPage(new TopicPage());
+		}
 
         protected override void OnSleep()
         {
@@ -66,7 +69,8 @@ namespace UkrGo
 
         protected override void OnResume()
         {
-            MainPage = GetMainPage();
+            if (Settings.AskPinCode)
+                MainPage = GetMainPage();
         }
     }
 }

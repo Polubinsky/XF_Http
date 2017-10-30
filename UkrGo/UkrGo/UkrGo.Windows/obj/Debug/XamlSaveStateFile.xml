@@ -1,6 +1,5 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
-    <LocalAssembly PathName="d:\projects\xf_http\ukrgo\ukrgo\ukrgo.windows\obj\debug\intermediatexaml\ukrgo.windows.exe" HashGuid="6b545c30-00c2-4432-ab7b-29c26d75fe1c" />
     <ReferenceAssembly PathName="p:\projects\xf_http\ukrgo\packages\acr.userdialogs.6.1.0\lib\portable-win+net45+wp8+win8+wpa81\acr.userdialogs.dll" HashGuid="5e7ea4b0-1a15-6a6e-d0a8-616baf9b816e" />
     <ReferenceAssembly PathName="p:\projects\xf_http\ukrgo\packages\acr.userdialogs.6.1.0\lib\portable-win+net45+wp8+win8+wpa81\acr.userdialogs.interface.dll" HashGuid="618b5379-755e-4cc4-ff52-8322037869e2" />
     <ReferenceAssembly PathName="p:\projects\xf_http\ukrgo\packages\dltoolkit.forms.controls.flowlistview.2.0.2\lib\portable-net45+wp8+wpa81+win8+monoandroid10+monotouch10+xamarin.ios10\dltoolkit.forms.controls.flowlistview.dll" HashGuid="908b01a9-fb47-7544-69c1-291ebbc7133c" />
@@ -12,7 +11,6 @@
     <ReferenceAssembly PathName="p:\projects\xf_http\ukrgo\packages\splat.1.6.2\lib\netcore45\splat.dll" HashGuid="8dcf8a70-4444-83df-44c3-9a44d85ca020" />
     <ReferenceAssembly PathName="p:\projects\xf_http\ukrgo\packages\microsoft.net.http.2.2.29\lib\win8\system.net.http.extensions.dll" HashGuid="b50282f8-b9f8-4408-8d49-ba2efe301624" />
     <ReferenceAssembly PathName="p:\projects\xf_http\ukrgo\packages\microsoft.net.http.2.2.29\lib\win8\system.net.http.primitives.dll" HashGuid="7b71418d-e056-7613-c839-85fb8f6472a6" />
-    <ReferenceAssembly PathName="p:\projects\xf_http\ukrgo\ukrgo\ukrgo\bin\debug\ukrgo.dll" HashGuid="06407dc8-b77f-3d6b-48c7-4acf9bd8158d" />
     <ReferenceAssembly PathName="p:\projects\xf_http\ukrgo\packages\xamarin.forms.2.3.3.168\lib\win81\xamarin.forms.core.dll" HashGuid="8fd6d715-5b1e-67fd-feee-b3bb9cc9acd7" />
     <ReferenceAssembly PathName="p:\projects\xf_http\ukrgo\packages\xamarin.forms.2.3.3.168\lib\win81\xamarin.forms.platform.dll" HashGuid="6b938cd4-44c0-2618-7eb6-4caa3f482076" />
     <ReferenceAssembly PathName="p:\projects\xf_http\ukrgo\packages\xamarin.forms.2.3.3.168\lib\win81\xamarin.forms.platform.winrt.dll" HashGuid="fe4acc44-27ba-0e4e-a08b-26ae7dccb678" />

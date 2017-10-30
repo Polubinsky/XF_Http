@@ -58,5 +58,14 @@ namespace UkrGo.Views
             await RefreshList();
         }
 
+        private void btnSettings_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushModalAsync(new SettingsPageView());
+		}
+
+		void Handle_Tapped(object sender, System.EventArgs e)
+		{
+             btnSettings_Clicked(sender, e);
+		}
     }
 }

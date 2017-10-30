@@ -29,19 +29,46 @@ RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Pr
                 </ListView.ItemTemplate>
             </ListView>
             </ContentView>
+			
             <Button
-				x:Name="fabBtn"
+				x:Name="btnSettings"
                 WidthRequest="60"
                 HeightRequest="60"
                 BorderRadius="30"
-				Text="+"
+				Image="ic_settings_white_24dp.png"
+				Clicked="btnSettings_Clicked"
+				BackgroundColor="OrangeRed"
+				RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1, Constant=-75}"
+                RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1, Constant=-150}"
+			 />
+			<!--<Label
+				Text="..." 
                 FontSize="Large"
 				TextColor="White"
+					RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1, Constant=-50}"
+                RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1, Constant=-120}">
+				<Label.GestureRecognizers>
+                   <TapGestureRecognizer Tapped="Handle_Tapped" NumberOfTapsRequired="1" />
+                </Label.GestureRecognizers>
+				</Label>-->
+            <Button
+				x:Name="btnAddTopic"
+                WidthRequest="60"
+                HeightRequest="60"
+                BorderRadius="30"
+			    Image="ic_add_white_24dp.png"
 				Clicked="Handle_FabClicked"
 				BackgroundColor="OrangeRed"
-				
+
 				RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1, Constant=-75}"
                 RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1, Constant=-75}" />
+
+			<!--<Label
+					Text="+"
+                FontSize="Large"
+				TextColor="White"
+					RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1, Constant=-45}"
+                RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1, Constant=-60}" />-->
 
     </RelativeLayout>
     </ContentPage.Content>

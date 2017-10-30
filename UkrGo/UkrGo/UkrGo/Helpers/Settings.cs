@@ -22,7 +22,8 @@ namespace UkrGo.Helpers
 		#region Setting Constants
 
 		private const string PinCodeKey = "pincode_key";
-		
+        private const string AskPinCodeKey = "ask_pincode_key";
+        private const string RemoveDublicateKey = "remove_dublicate_key";
 
 		#endregion
 
@@ -39,5 +40,29 @@ namespace UkrGo.Helpers
 			}
 		}
 
-	}
+        public static bool AskPinCode
+        {
+            get
+            {
+                return AppSettings.GetValueOrDefault(AskPinCodeKey, false);
+            }
+            set
+            {
+                AppSettings.AddOrUpdateValue(AskPinCodeKey, value);
+            }
+        }
+
+        public static bool RemoveDublicate
+        {
+            get
+            {
+                return AppSettings.GetValueOrDefault(RemoveDublicateKey, false);
+            }
+            set
+            {
+                AppSettings.AddOrUpdateValue(RemoveDublicateKey, value);
+            }
+        }
+
+    }
 }

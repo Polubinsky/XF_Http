@@ -25,7 +25,7 @@
 
             <controls:FlowListView.FlowColumnTemplate>
                 <DataTemplate>
-                    <Grid Padding="5" >
+                    <Grid Padding="5">
 
                         <Grid.RowDefinitions>
                             <RowDefinition Height="*" />

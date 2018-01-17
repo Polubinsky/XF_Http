@@ -3,8 +3,8 @@ using Xamarin.Forms;
 using UkrGo.Data;
 using UkrGo.Interfaces;
 using UkrGo.Views;
-using Xamarin.Forms.Xaml;
 using UkrGo.Helpers;
+
 
 namespace UkrGo
 {
@@ -57,7 +57,9 @@ namespace UkrGo
 
 		protected override void OnStart()
 		{
-			if (Settings.AskPinCode)
+
+
+            if (Settings.AskPinCode)
 				MainPage = GetMainPage();
 			else MainPage = new NavigationPage(new TopicPage());
 		}

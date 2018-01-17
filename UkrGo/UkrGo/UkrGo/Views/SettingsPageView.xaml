@@ -1,9 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="UkrGo.Views.SettingsPageView">
+<ContentPage
+    x:Class="UkrGo.Views.SettingsPageView"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
     <ContentPage.Content>
-	        
+
         <Grid Margin="20">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="7*" />
@@ -15,10 +16,22 @@
                 <RowDefinition Height="10*" />
             </Grid.RowDefinitions>
 
-            <Label Grid.Column="0" Grid.Row="0" Text="Не показывать дубликаты" />
-            <Switch Grid.Column="1" Grid.Row="0" IsToggled="{Binding RemoveDuplicate}" />
-            <Label Grid.Column="0" Grid.Row="1" Text="Запрос PIN"  />
-            <Switch Grid.Column="1" Grid.Row="1" IsToggled="{Binding AskPinCode}" />
+            <Label
+                Grid.Row="0"
+                Grid.Column="0"
+                Text="Не показывать дубликаты" />
+            <Switch
+                Grid.Row="0"
+                Grid.Column="1"
+                IsToggled="{Binding RemoveDuplicate}" />
+            <Label
+                Grid.Row="1"
+                Grid.Column="0"
+                Text="Запрос PIN" />
+            <Switch
+                Grid.Row="1"
+                Grid.Column="1"
+                IsToggled="{Binding AskPinCode}" />
 
         </Grid>
     </ContentPage.Content>

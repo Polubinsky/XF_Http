@@ -68,7 +68,6 @@ P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\Xamarin.Forms.Platform.pdb
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\Xamarin.Forms.Xaml.pdb
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\bin\Debug\Xamarin.Forms.Xaml.xml
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\obj\Debug\UkrGo.csproj.App.config
-P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\obj\Debug\UkrGo.csprojResolveAssemblyReference.cache
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\obj\Debug\UkrGo.csproj.CoreCompileInputs.cache
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\obj\Debug\UkrGo.Views.MainPage.xaml.g.cs
 P:\projects\XF_Http\UkrGo\UkrGo\UkrGo\obj\Debug\UkrGo.App.xaml.g.cs

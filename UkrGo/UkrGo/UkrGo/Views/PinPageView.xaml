@@ -1,13 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:UkrGo.Controls.PinViewControl;assembly=UkrGo"
-             x:Class="UkrGo.Views.PinPageView">
+<ContentPage
+    x:Class="UkrGo.Views.PinPageView"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:UkrGo.Controls.PinViewControl;assembly=UkrGo">
     <ContentPage.Content>
         <local:PinView
             Title="🔐 Enter your PIN"
+            BindingContext="{Binding PinViewModel}"
             HorizontalOptions="CenterAndExpand"
-            VerticalOptions="CenterAndExpand"
-            BindingContext="{Binding PinViewModel}" />
+            VerticalOptions="CenterAndExpand" />
     </ContentPage.Content>
 </ContentPage>

@@ -1,29 +1,41 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-           
-             x:Class="UkrGo.Views.AddTopicPage" BackgroundColor="White">
+<ContentPage
+    x:Class="UkrGo.Views.AddTopicPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    BackgroundColor="White">
     <ContentPage.Content>
         <RelativeLayout>
-            <ContentView
-				RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"
-                RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1}">
-                <ScrollView Padding="10,10,10,0" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand" x:Name="webPanel">
-                    <WebView x:Name="wb" Navigated="wb_Navigated" Navigating="wb_Navigating"></WebView>
-                </ScrollView >
+            <ContentView RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1}" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}">
+                <ScrollView
+                    x:Name="webPanel"
+                    Padding="10,10,10,0"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="FillAndExpand">
+                    <WebView
+                        x:Name="wb"
+                        Navigated="wb_Navigated"
+                        Navigating="wb_Navigating" />
+                </ScrollView>
 
             </ContentView>
-           
+
             <Button
                 x:Name="fabBtn"
-				WidthRequest="60"
-                HeightRequest="60"
+                BackgroundColor="OrangeRed"
                 BorderRadius="30"
-				Image="ic_add_white_24dp.png"
-				Clicked="Handle_FabClicked"
-				BackgroundColor="OrangeRed"
-				RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1, Constant=-75}"
-                RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1, Constant=-75}" />
+                Clicked="Handle_FabClicked"
+                HeightRequest="60"
+                Image="ic_add_white_24dp.png"
+                RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent,
+                                                                  Property=Width,
+                                                                  Factor=1,
+                                                                  Constant=-75}"
+                RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent,
+                                                                  Property=Height,
+                                                                  Factor=1,
+                                                                  Constant=-75}"
+                WidthRequest="60" />
         </RelativeLayout>
     </ContentPage.Content>
 </ContentPage>

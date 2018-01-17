@@ -184,3 +184,7 @@ FakesAssemblies/
 *.userprefs
 
 .DS_Store
+*.lock
+/UkrGo/.vs/UkrGo/v15/Server/sqlite3
+/UkrGo/.vs/UkrGo/v15/sqlite3/storage.ide-shm
+/UkrGo/.vs/UkrGo/v15/sqlite3/storage.ide-wal

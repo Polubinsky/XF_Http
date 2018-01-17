@@ -1,48 +1,66 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             
-             x:Class="UkrGo.Views.TopicPage" BackgroundColor="White">
+<ContentPage
+    x:Class="UkrGo.Views.TopicPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    BackgroundColor="White">
     <ContentPage.Content>
         <RelativeLayout>
-            <ContentView
-				RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"
-RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1}">
-                <ListView x:Name="listView" Margin="20" ItemSelected="OnListItemSelected">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <ViewCell.ContextActions>
-                                <MenuItem Clicked="OnMore" CommandParameter="{Binding .}"
-               Text="More" />
-                                <MenuItem Clicked="OnDelete" CommandParameter="{Binding .}"
-               Text="Delete" IsDestructive="True" />
-                            </ViewCell.ContextActions>
+            <ContentView RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1}" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}">
+                <ListView
+                    x:Name="listView"
+                    Margin="20"
+                    ItemSelected="OnListItemSelected">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <ViewCell.ContextActions>
+                                    <MenuItem
+                                        Clicked="OnMore"
+                                        CommandParameter="{Binding .}"
+                                        Text="More" />
+                                    <MenuItem
+                                        Clicked="OnDelete"
+                                        CommandParameter="{Binding .}"
+                                        IsDestructive="True"
+                                        Text="Delete" />
+                                </ViewCell.ContextActions>
 
-                            <StackLayout Margin="20,0,0,0" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
-                                <Label Text="{Binding TopicName}" VerticalTextAlignment="Center" HorizontalOptions="StartAndExpand" />
+                                <StackLayout
+                                    Margin="20,0,0,0"
+                                    HorizontalOptions="FillAndExpand"
+                                    Orientation="Horizontal">
+                                    <Label
+                                        HorizontalOptions="StartAndExpand"
+                                        Text="{Binding TopicName}"
+                                        VerticalTextAlignment="Center" />
 
-                            </StackLayout>
-                        </ViewCell>
+                                </StackLayout>
+                            </ViewCell>
 
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
             </ContentView>
-			
+
             <Button
-				x:Name="btnSettings"
-                WidthRequest="60"
-                HeightRequest="60"
+                x:Name="btnSettings"
+                BackgroundColor="OrangeRed"
                 BorderRadius="30"
-				Image="ic_settings_white_24dp.png"
-				Clicked="btnSettings_Clicked"
-				BackgroundColor="OrangeRed"
-				RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1, Constant=-75}"
-                RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1, Constant=-150}"
-			 />
-			<!--<Label
-				Text="..." 
+                Clicked="btnSettings_Clicked"
+                HeightRequest="60"
+                Image="ic_settings_white_24dp.png"
+                RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent,
+                                                                  Property=Width,
+                                                                  Factor=1,
+                                                                  Constant=-75}"
+                RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent,
+                                                                  Property=Height,
+                                                                  Factor=1,
+                                                                  Constant=-150}"
+                WidthRequest="60" />
+            <!--<Label
+				Text="..."
                 FontSize="Large"
 				TextColor="White"
 					RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1, Constant=-50}"
@@ -52,24 +70,29 @@ RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Pr
                 </Label.GestureRecognizers>
 				</Label>-->
             <Button
-				x:Name="btnAddTopic"
-                WidthRequest="60"
-                HeightRequest="60"
+                x:Name="btnAddTopic"
+                BackgroundColor="OrangeRed"
                 BorderRadius="30"
-			    Image="ic_add_white_24dp.png"
-				Clicked="Handle_FabClicked"
-				BackgroundColor="OrangeRed"
+                Clicked="Handle_FabClicked"
+                HeightRequest="60"
+                Image="ic_add_white_24dp.png"
+                RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent,
+                                                                  Property=Width,
+                                                                  Factor=1,
+                                                                  Constant=-75}"
+                RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent,
+                                                                  Property=Height,
+                                                                  Factor=1,
+                                                                  Constant=-75}"
+                WidthRequest="60" />
 
-				RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1, Constant=-75}"
-                RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1, Constant=-75}" />
-
-			<!--<Label
+            <!--<Label
 					Text="+"
                 FontSize="Large"
 				TextColor="White"
 					RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1, Constant=-45}"
                 RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1, Constant=-60}" />-->
 
-    </RelativeLayout>
+        </RelativeLayout>
     </ContentPage.Content>
 </ContentPage>

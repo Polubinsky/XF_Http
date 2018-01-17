@@ -3,8 +3,8 @@
     x:Class="UkrGo.Views.DetailPage"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:converters="clr-namespace:UkrGo.Converters;assembly=UkrGo"
     xmlns:controls="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
+    xmlns:converters="clr-namespace:UkrGo.Converters;assembly=UkrGo"
     xmlns:forms1="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
     xmlns:ukrGo="clr-namespace:UkrGo;assembly=UkrGo">
     <StackLayout>
@@ -38,9 +38,10 @@
             <controls:CarouselViewControl
                 x:Name="csImages"
                 Grid.Row="0"
-                ItemsSource="{Binding Data.ImageLinks}" ShowIndicators="True"
-                Position="{Binding Position, Mode=TwoWay}">
-                
+                ItemsSource="{Binding Data.ImageLinks}"
+                Position="{Binding Position, Mode=TwoWay}"
+                ShowIndicators="True">
+
                 <controls:CarouselViewControl.ItemTemplate>
                     <DataTemplate>
 
@@ -55,9 +56,9 @@
                         </forms1:CachedImage>
 
                     </DataTemplate>
-                    </controls:CarouselViewControl.ItemTemplate>
+                </controls:CarouselViewControl.ItemTemplate>
             </controls:CarouselViewControl>
-           
+
             <ScrollView Grid.Row="1">
                 <StackLayout Padding="12">
                     <Label
@@ -73,7 +74,7 @@
                         TextColor="Blue"
                         VerticalOptions="CenterAndExpand">
                         <Label.GestureRecognizers>
-                            <TapGestureRecognizer Tapped = "OnContactTapped"/>
+                            <TapGestureRecognizer Tapped="OnContactTapped" />
 
                         </Label.GestureRecognizers>
                     </Label>

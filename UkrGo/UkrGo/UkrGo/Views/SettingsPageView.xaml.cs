@@ -11,7 +11,9 @@ namespace UkrGo.Views
         {
             InitializeComponent();
             BindingContext = new SettingsPageViewModel();
-            NavigationPage.SetHasNavigationBar(this, false);
+            if (Device.RuntimePlatform != Device.iOS)
+                NavigationPage.SetHasNavigationBar(this, false);
+            else NavigationPage.SetHasNavigationBar(this, true);
         }
     }
 }

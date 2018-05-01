@@ -7,25 +7,31 @@ using Android.Graphics;
 using Android.Widget;
 using UkrGo.Droid.Extra;
 using UkrGo.Interfaces;
+using Android.Media;
 using Xamarin.Forms;
 using Plugin.CurrentActivity;
+using Android.Util;
 
 [assembly: Xamarin.Forms.Dependency(typeof(ScreenshotManager))]
 namespace UkrGo.Droid.Extra
 {
     public class ScreenshotManager : IScreenshotManager
     {
+        private MediaActionSound _mediaSound;
+
         public static Activity Activity { get; set; }
 
         public async Task<byte[]> CaptureAsync()
         {
-
+            
             Activity = CrossCurrentActivity.Current.Activity;
-
+            await Task.Delay(50);
             if (Activity == null)
             {
                 throw new Exception("You have to set ScreenshotManager.Activity in your Android project");
             }
+
+            LoadShutterSound();
 
             var view = Activity.Window.DecorView;
             view.DrawingCacheEnabled = true;
@@ -39,7 +45,9 @@ namespace UkrGo.Droid.Extra
                 await bitmap.CompressAsync(Bitmap.CompressFormat.Jpeg, 30, stream);
                 bitmapData = stream.ToArray();
             }
-            
+
+            view.DrawingCacheEnabled = false;
+            _mediaSound.Play(MediaActionSoundType.ShutterClick);
             return bitmapData;
         }
 
@@ -57,8 +65,6 @@ namespace UkrGo.Droid.Extra
                 var mediaScanIntent = new Intent(Intent.ActionMediaScannerScanFile);
                 mediaScanIntent.SetData(Android.Net.Uri.FromFile(new Java.IO.File(filePath)));
                 Forms.Context.SendBroadcast(mediaScanIntent);
-                Toast.MakeText(Activity, filePath + " saved ", ToastLength.Long);
-
             }
             catch (System.Exception e)
             {
@@ -66,5 +72,23 @@ namespace UkrGo.Droid.Extra
             }
 
         }
+
+        private bool LoadShutterSound()
+        {
+            try
+            {
+                _mediaSound = new MediaActionSound();
+                _mediaSound.LoadAsync(MediaActionSoundType.ShutterClick);
+
+                return true;
+            }
+            catch (Java.Lang.Exception error)
+            {
+                Log.WriteLine(LogPriority.Error, error.Source, error.Message);
+            }
+
+            return false;
+        }
+
     }
 }

@@ -21,6 +21,22 @@
             </ContentView>
 
             <Button
+                x:Name="fabHome"
+                BackgroundColor="OrangeRed"
+                BorderRadius="30"
+                Clicked="fabHome_Clicked"
+                HeightRequest="60"
+                Image="ic_home_white_24dp.png"
+                RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent,
+                                                                  Property=Width,
+                                                                  Factor=1,
+                                                                  Constant=-75}"
+                RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent,
+                                                                  Property=Height,
+                                                                  Factor=1,
+                                                                  Constant=-150}"
+                WidthRequest="60" />
+            <Button
                 x:Name="fabBtn"
                 BackgroundColor="OrangeRed"
                 BorderRadius="30"

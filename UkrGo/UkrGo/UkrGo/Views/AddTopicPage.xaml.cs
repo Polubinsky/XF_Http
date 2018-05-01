@@ -50,6 +50,10 @@ namespace UkrGo.Views
                 _pd = UserDialogs.Instance.Loading("Please wait", null, null, true, MaskType.Clear);
             else _pd.Show();
         }
- 
+
+        private async void fabHome_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PopToRootAsync();
+        }
     }
 }

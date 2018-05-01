@@ -8,7 +8,8 @@ using FFImageLoading;
 using Xamarin.Forms;
 using Acr.UserDialogs;
 using CarouselView.FormsPlugin.Android;
-
+using Android.Runtime;
+using Plugin.Permissions;
 
 namespace UkrGo.Droid
 {
@@ -39,7 +40,11 @@ namespace UkrGo.Droid
             base.OnTrimMemory(level);
         }
 
-       
+        public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Permission[] grantResults)
+        {
+            base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+            PermissionsImplementation.Current.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+        }
     }
 }
 

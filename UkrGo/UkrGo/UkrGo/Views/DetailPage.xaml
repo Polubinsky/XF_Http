@@ -7,91 +7,111 @@
     xmlns:converters="clr-namespace:UkrGo.Converters;assembly=UkrGo"
     xmlns:forms1="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
     xmlns:ukrGo="clr-namespace:UkrGo;assembly=UkrGo">
-    <StackLayout>
-        <ActivityIndicator
-            HorizontalOptions="CenterAndExpand"
-            IsEnabled="True"
-            IsRunning="True"
-            IsVisible="{Binding IsLoading, Mode=TwoWay}"
-            RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent,
-                                                              Property=Height,
-                                                              Factor=0.33}"
-            RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent,
-                                                              Property=Height,
-                                                              Factor=0.28}"
-            VerticalOptions="CenterAndExpand"
-            Color="Gray" />
+    <RelativeLayout>
+        <StackLayout RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1}" 
+                     RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}">
+            <ActivityIndicator
+                HorizontalOptions="CenterAndExpand"
+                IsEnabled="True"
+                IsRunning="True"
+                IsVisible="{Binding IsLoading, Mode=TwoWay}"
+                RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent,
+                                                                  Property=Height,
+                                                                  Factor=0.33}"
+                RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent,
+                                                                  Property=Height,
+                                                                  Factor=0.28}"
+                VerticalOptions="CenterAndExpand"
+                Color="Gray" />
 
-        <!--<Button
-            BackgroundColor="Green"
-            Command="{Binding SaveCommand}"
-            IsVisible="{Binding IsSaving, Mode=TwoWay}"
-            Text="Save" />-->
-        <Grid
-            Margin="8"
-            IsVisible="{Binding IsDataReady, Mode=TwoWay}"
-            RowSpacing="0">
-            <Grid.RowDefinitions>
-                <RowDefinition Height=".7*" />
-                <RowDefinition Height=".3*" />
-            </Grid.RowDefinitions>
-            <controls:CarouselViewControl
-                x:Name="csImages"
-                Grid.Row="0"
-                ItemsSource="{Binding Data.ImageLinks}"
-                Position="{Binding Position, Mode=TwoWay}"
-                ShowIndicators="True">
+            <!--<Button
+                BackgroundColor="Green"
+                Command="{Binding SaveCommand}"
+                IsVisible="{Binding IsSaving, Mode=TwoWay}"
+                Text="Save" />-->
+            <Grid
+                Margin="8"
+                IsVisible="{Binding IsDataReady, Mode=TwoWay}"
+                RowSpacing="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height=".7*" />
+                    <RowDefinition Height=".3*" />
+                </Grid.RowDefinitions>
+                <controls:CarouselViewControl
+                    x:Name="csImages"
+                    Grid.Row="0"
+                    ItemsSource="{Binding Data.ImageLinks}"
+                    Position="{Binding Position, Mode=TwoWay}"
+                    ShowIndicators="True">
 
-                <controls:CarouselViewControl.ItemTemplate>
-                    <DataTemplate>
+                    <controls:CarouselViewControl.ItemTemplate>
+                        <DataTemplate>
 
-                        <forms1:CachedImage
-                            Aspect="AspectFill"
-                            BackgroundColor="White"
-                            DownsampleToViewSize="true"
-                            Source="{Binding Picture}">
-                            <forms1:CachedImage.GestureRecognizers>
-                                <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="OnImageDoubleTap" />
-                            </forms1:CachedImage.GestureRecognizers>
-                        </forms1:CachedImage>
+                            <forms1:CachedImage
+                                Aspect="AspectFill"
+                                BackgroundColor="White"
+                                DownsampleToViewSize="true"
+                                Source="{Binding Picture}">
+                                <forms1:CachedImage.GestureRecognizers>
+                                    <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="OnImageDoubleTap" />
+                                </forms1:CachedImage.GestureRecognizers>
+                            </forms1:CachedImage>
 
-                    </DataTemplate>
-                </controls:CarouselViewControl.ItemTemplate>
-            </controls:CarouselViewControl>
+                        </DataTemplate>
+                    </controls:CarouselViewControl.ItemTemplate>
+                </controls:CarouselViewControl>
 
-            <ScrollView Grid.Row="1">
-                <StackLayout Padding="12">
+                <StackLayout Padding="12" Grid.Row="1">
                     <Label
-                        FontSize="16"
-                        HorizontalOptions="StartAndExpand"
-                        Text="{Binding Data.Region}"
-                        TextColor="Black"
-                        VerticalOptions="CenterAndExpand" />
+                            FontSize="16"
+                            HorizontalOptions="StartAndExpand"
+                            Text="{Binding Data.Region}"
+                            TextColor="Black"
+                            VerticalOptions="CenterAndExpand" />
                     <Label
-                        FontSize="16"
-                        HorizontalOptions="StartAndExpand"
-                        Text="{Binding Data.Contact}"
-                        TextColor="Blue"
-                        VerticalOptions="CenterAndExpand">
+                            FontSize="16"
+                            HorizontalOptions="StartAndExpand"
+                            Text="{Binding Data.Contact}"
+                            TextColor="Blue"
+                            VerticalOptions="CenterAndExpand">
                         <Label.GestureRecognizers>
                             <TapGestureRecognizer Tapped="OnContactTapped" />
 
                         </Label.GestureRecognizers>
                     </Label>
                     <Label
-                        FontSize="16"
-                        HorizontalOptions="StartAndExpand"
-                        Text="{Binding Data.Info}"
-                        TextColor="Black"
-                        VerticalOptions="CenterAndExpand" />
-                    <Label
-                        FontSize="16"
-                        HorizontalOptions="StartAndExpand"
-                        Text="{Binding Data.Text}"
-                        TextColor="Gray"
-                        VerticalOptions="CenterAndExpand" />
+                            FontSize="16"
+                            HorizontalOptions="StartAndExpand"
+                            Text="{Binding Data.Info}"
+                            TextColor="Black"
+                            VerticalOptions="CenterAndExpand" />
+                    <ScrollView>
+                        <Label
+                                FontSize="16"
+                                HorizontalOptions="StartAndExpand"
+                                Text="{Binding Data.Text}"
+                                TextColor="Gray"
+                                VerticalOptions="CenterAndExpand" />
+                    </ScrollView>
                 </StackLayout>
-            </ScrollView>
-        </Grid>
-    </StackLayout>
+            </Grid>
+        </StackLayout>
+        <Button
+                x:Name="btnTakeScreenshot"
+                BorderRadius="30"
+                BackgroundColor="Green"
+                Command="{Binding SaveCommand}"
+                IsVisible="{Binding IsSaving, Mode=TwoWay}"
+                HeightRequest="60"
+                Image="ic_photo_camera_white_24dp.png"
+                RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent,
+                                                                  Property=Width,
+                                                                  Factor=1,
+                                                                  Constant=-75}"
+                RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent,
+                                                                  Property=Height,
+                                                                  Factor=1,
+                                                                  Constant=-75}"
+                WidthRequest="60" />
+    </RelativeLayout>
 </ContentPage>

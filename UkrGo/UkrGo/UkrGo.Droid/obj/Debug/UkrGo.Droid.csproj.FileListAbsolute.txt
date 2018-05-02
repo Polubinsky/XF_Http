@@ -448,6 +448,8 @@ C:/Projects/UkrGo/UkrGo/UkrGo/UkrGo.Droid/obj/Debug/android/assets/System.Xml.pd
 /Users/andriipolubinskyi/Documents/UkrGo/UkrGo/UkrGo/UkrGo.Droid/bin/Debug/Xamarin.Forms.Core.dll.mdb
 /Users/andriipolubinskyi/Documents/UkrGo/UkrGo/UkrGo/UkrGo.Droid/bin/Debug/Xamarin.Forms.Platform.Android.dll.mdb
 /Users/andriipolubinskyi/Documents/UkrGo/UkrGo/UkrGo/UkrGo.Droid/bin/Debug/Xamarin.Forms.Xaml.dll.mdb
+/Users/andriipolubinskyi/Documents/UkrGo/UkrGo/UkrGo/UkrGo.Droid/bin/Debug/HockeySDK.AndroidBindings.dll
+/Users/andriipolubinskyi/Documents/UkrGo/UkrGo/UkrGo/UkrGo.Droid/bin/Debug/HockeySDK.dll
 /Users/andriipolubinskyi/Documents/UkrGo/UkrGo/UkrGo/UkrGo.Droid/bin/Debug/Mono.Android.pdb
 /Users/andriipolubinskyi/Documents/UkrGo/UkrGo/UkrGo/UkrGo.Droid/obj/Debug/linksrc/UkrGo.Droid.pdb
 /Users/andriipolubinskyi/Documents/UkrGo/UkrGo/UkrGo/UkrGo.Droid/obj/Debug/linksrc/HtmlAgilityPack.pdb

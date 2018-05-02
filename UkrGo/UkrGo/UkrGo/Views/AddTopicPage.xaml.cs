@@ -16,6 +16,7 @@ namespace UkrGo.Views
             
             NavigationPage.SetHasNavigationBar(this, false);
             fabBtn.IsVisible = false;
+            fabHome.IsVisible = false;
         }
         protected override bool OnBackButtonPressed()
         {
@@ -39,7 +40,7 @@ namespace UkrGo.Views
             if (_pd != null)
                 _pd.Hide();
             fabBtn.IsVisible = true;
-
+            fabHome.IsVisible = true;
 
         }
 

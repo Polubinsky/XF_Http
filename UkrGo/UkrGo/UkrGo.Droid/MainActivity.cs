@@ -10,12 +10,16 @@ using Acr.UserDialogs;
 using CarouselView.FormsPlugin.Android;
 using Android.Runtime;
 using Plugin.Permissions;
+using HockeyApp.Android;
+using HockeyApp.Android.Utils;
 
 namespace UkrGo.Droid
 {
     [Activity(Label = "UkrGo", Icon = "@drawable/icon", Theme = "@style/MainTheme", ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
+        public const string AppID = "7ba4386fd27844d19c2e8104abad75a0";
+
         protected override void OnCreate(Bundle bundle)
         {
             TabLayoutResource = Resource.Layout.Tabbar;
@@ -28,9 +32,21 @@ namespace UkrGo.Droid
             CarouselViewRenderer.Init();
             UserDialogs.Init(() => (Activity)Forms.Context);
 
+
+
+           // CrashManager.Register(this, AppID);
+
+
+
             LoadApplication(new App());
            
 
+        }
+
+        protected override void OnResume()
+        {
+            base.OnResume();
+            CrashManager.Register(this, AppID);
         }
 
         public override void OnTrimMemory(TrimMemory level)
